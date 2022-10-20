@@ -1,3 +1,3 @@
-# Workshop
+# Projetos
 
-## Meu repositório de estudos e projetos
+## Meu repositório de Projetos
