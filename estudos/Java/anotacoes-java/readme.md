@@ -4,3 +4,4 @@
 - ## Sintaxe Java
 - ## Anatomia das Classes
 - ## Tipos e Variáveis
+- ## Operadores

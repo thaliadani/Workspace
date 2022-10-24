@@ -23,7 +23,7 @@
  
  
  
- # Anatomia das classes
+# Anatomia das classes
  
 ## Declarando variáveis e métodos
 
@@ -62,16 +62,16 @@
  - ### org : organização
  - ### opensource : opensource 
  
- ### exemplos:
- ### com.pimenta.modelo
- ### edu.thalia.primeirasemana
+ ### Exemplos:
+ #### com.pimenta.modelo
+ #### edu.thalia.primeirasemana
  
  
  ## Java Beans
  
- ## Formas de escrita universal para as classes,atributos,métodos e pacotes. 
+ ## Formas de escrita universal para as classes, atributos, métodos e pacotes. 
  
- - ### Uma variável deve ser clara,sem abreviações ou definição sem sentido;
+ - ### Uma variável deve ser clara, sem abreviações ou definição sem sentido;
  
  - ### Uma variável é sempre no singular, ***exceto quando se referir a um array ou coleção***;
  
