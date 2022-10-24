@@ -24,3 +24,12 @@
  
  - ## com : Comercial
  - ## edu : Educação
+ 
+ 
+ # Tipos e Variáveis
+ 
+- ## O ponto nos números em java significa vírgula. exemplo: _double_ salarioMinimo = 2.500;
+
+- ## O float no final do número precisa  colocar F, pode ser maiúsculo ou minusculo. exemplo: float pi = 3.14F;
+
+- ## O long no final do número precisa  colocar L, pode ser maiúsculo ou minusculo. exemplo: long cpf = 99765432109L;
