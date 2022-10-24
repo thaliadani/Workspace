@@ -1,8 +1,10 @@
 package edu.thalia.tiposdevariaveis;
 
 public class TiposVariaveis {
-   
     public static void main (String [] args) {
+         //Tipos primitivos
+         // Estudem a classe String que representa texto
+
         double salarioMinimo = 2.500;
         float pi = 3.14F;
         long  cpf = 99765432109l;
@@ -12,5 +14,13 @@ public class TiposVariaveis {
         int numeroNormal = numeroCurto;
         short numeroCurto2 = (short) numeroNormal;
 
-}
+        
+        int numero = 5;
+        numero = 10;
+
+        System.out.print(numero);
+
+        final double VALOR_DE_PI = 3.14;
+        VALOR_DE_PI = 10.75;
+    }
 }
