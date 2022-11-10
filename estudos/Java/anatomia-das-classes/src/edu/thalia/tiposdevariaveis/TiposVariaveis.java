@@ -2,8 +2,7 @@ package edu.thalia.tiposdevariaveis;
 
 public class TiposVariaveis {
     public static void main (String [] args) {
-         //Tipos primitivos
-         // Estudem a classe String que representa texto
+         
 
         double salarioMinimo = 2.500;
         float pi = 3.14F;
