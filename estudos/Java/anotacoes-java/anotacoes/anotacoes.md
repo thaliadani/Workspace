@@ -1,6 +1,6 @@
 # Ambiente de Desenvolvimento Java
 
-## [Link da aula](https://web.dio.me/course/ambiente-de-desenvolvimento-java/learning/21a69c4a-f23d-47b8-982b-582eba75d4f5?back=/track/potencia-tech-powered-ifood-java-beginners&tab=undefined&moduleId=undefined "Ambiente de Desenvolvimento Java")
+### [Link da aula](https://web.dio.me/course/ambiente-de-desenvolvimento-java/learning/21a69c4a-f23d-47b8-982b-582eba75d4f5?back=/track/potencia-tech-powered-ifood-java-beginners&tab=undefined&moduleId=undefined "Ambiente de Desenvolvimento Java")
 
 ## Instalações
 
@@ -13,15 +13,15 @@
 
 # Aprendendo a Sintaxe Java
 
-## [Link da aula](https://web.dio.me/course/aprendendo-a-sintaxe-java/learning/564ed099-1bee-4481-9c2f-cd9b427b6331?back=/track/potencia-tech-powered-ifood-java-beginners&tab=path&moduleId=undefined "Aprendendo a Sintaxe Java")
+### [Link da aula](https://web.dio.me/course/aprendendo-a-sintaxe-java/learning/564ed099-1bee-4481-9c2f-cd9b427b6331?back=/track/potencia-tech-powered-ifood-java-beginners&tab=path&moduleId=undefined "Aprendendo a Sintaxe Java")
  
- - ## Todas as classes começarão com letra maiúscula e a palavra complementar também
+ - ### Todas as classes começarão com letra maiúscula e a palavra complementar também
  
- - ## void : vai executar mas não vai retornar nada
+ - ### void : vai executar mas não vai retornar nada
  
 # Anatomia das Classes
  
-## Declarando variáveis e métodos
+### Declarando variáveis e métodos
 
 ### Declarar uma variável em Java segue sempre a seguinte estrutura:
 
@@ -35,7 +35,7 @@
  
 ## Identação 
 
-## Escrever o código de forma hierárquica, facilitando a visualização e o entendimento do programa. Exemplo:
+### Escrever o código de forma hierárquica, facilitando a visualização e o entendimento do programa. Exemplo:
 
     public class BoletimEstudantil {
        public static void main(String[] args){
@@ -65,7 +65,7 @@
  
  ## Java Beans
  
- ## Formas de escrita universal para as classes, atributos, métodos e pacotes. 
+ ### Formas de escrita universal para as classes, atributos, métodos e pacotes. 
  
  - ### Uma variável deve ser clara, sem abreviações ou definição sem sentido;
  
@@ -90,13 +90,13 @@
  
  ![](2011-06-15-java-tipos-primitivos-01.png)
 
-- ## O ponto nos números em java significa vírgula. Exemplo: _double_ salarioMinimo = 2.500;
+- ### O ponto nos números em java significa vírgula. Exemplo: _double_ salarioMinimo = 2.500;
 
-- ## O **float**  no final do número precisa  colocar F, pode ser maiúsculo ou minusculo. Exemplo: float pi = 3.14F;
+- ### O **float**  no final do número precisa  colocar F, pode ser maiúsculo ou minusculo. Exemplo: float pi = 3.14F;
 
-- ## O **long**  no final do número precisa  colocar L, pode ser maiúsculo ou minusculo. Exemplo: long cpf = 99765432109L;
+- ### O **long**  no final do número precisa  colocar L, pode ser maiúsculo ou minusculo. Exemplo: long cpf = 99765432109L;
 
-- ## O **final** no inicio da variável e sendo a convenção de nome em caixa alta faz com que nunca altera o valor. Exemplo: final *double* VALOR_DE_PI = 3.14;
+- ### O **final** no inicio da variável e sendo a convenção de nome em caixa alta faz com que nunca altera o valor. Exemplo: final *double* VALOR_DE_PI = 3.14;
 
 
 # String em Java
@@ -201,7 +201,7 @@
 
 ### Nesse caso a mensagem "Os nomes são diferentes!" será impressa, uma vez que nome1 contém uma sequencia de caracteres diferente de nome2.
 
-### equalsIgnoreCase 
+### **equalsIgnoreCase** 
 
 ### Esse método ignora a distinção entre letras maiúsculas e minúsculas nas duas strings comparadas.
 
@@ -215,7 +215,7 @@
 ### Nesse novo exemplo os nomes são iguais, então o método equalsIgnoreCase retornará true.
 
 
-### compareTo
+### **compareTo**
 
 ### Esse método pode retornar 0 se as strings forem iguais, um número negativo se a string que invoca o compareTo for menor que a string que é passada como um argumento e um número positivo se a string que invoca o compareTo for maior que a string que é passada como argumento.
 
@@ -227,7 +227,7 @@
 
 ### Neste caso, compareTo vai nos dar um número negativo no primeiro caso, porque Carla é menor que Carlos, e um número positivo no segundo caso porque Carlos é maior que Carla.
 
-### compareToIgnoreCase
+### **compareToIgnoreCase**
 
 ### É uma função que compara textos lexigraficamente, ignorando se as letras são maiúsculas ou minúsculas. No exemplo abaixo fazemos duas comparações, uma utilizando compareTo e a outra usando compareToIgnoreCase para analisarmos as diferenças.
 
@@ -248,7 +248,7 @@
 
 ### A partir daqui listaremos os principais métodos da classe String com exemplos comentados. Existem muitos métodos nesta classe e aqui falaremos sobre os mais utilizados. 
 
-### concat
+### **concat**
 
 ### Existem duas formas de unir duas ou mais sequências de caracteres. A mais comum dentre elas é utilizando o operador de adição.
 
@@ -260,7 +260,7 @@
 
 ### Note que se o valor de nome for Carlos e sobrenome for Henrique, o resultado do código acima será CarlosHenrique, porque não há espaço entre os dois textos.
 
-### String.valueOf
+### **String.valueOf**
 
 ### valueOf é um método estático da classe String, que não precisa de uma instância para ser invocado. Ele converte um tipo primitivo em um objeto do tipo String.
 
@@ -276,7 +276,7 @@
     }
     }
 
-### Length
+### **Length**
 
 ### Retorna o comprimento do texto em uma String. É impresso o comprimento do texto.
 
@@ -284,7 +284,7 @@
   
     System.out.printf("\nTamanho da variável nomeCurso: %d", nomeCurso.length());
 
-### charAt
+### **charAt**
 
 ### Retorna o caractere em uma localização específica em uma String. Esse método possui um parâmetro do tipo inteiro que é usado como índice, retornando a partir dessa posição inserida nesse parâmetro. É importante lembrar que o índice sempre começa a ser contado do número 0 (zero) em diante. Sendo assim a posição do caractere a em Carlos é 1 e não 2, como se poderia deduzir.
 
@@ -296,7 +296,7 @@
        System.out.println(“O caractere A está na posição 1”);
     }
 
-### getChars
+### **getChars**
 
 ### Recupera um conjunto de caracteres de uma String. Esse método possui os seguintes parâmetros de entrada:
 
@@ -324,7 +324,7 @@
           System.out.print("["+b[i]+"]");
       }
 
-### startsWith e endsWith
+### **startsWith e endsWith**
 
 ### Os métodos startsWith e endsWith aceitam uma string e um número inteiro como argumentos, retornando um valor booleano que indica se a string inicia ou termina, respectivamente, com o texto informado a partir da posição dada.
 
@@ -349,11 +349,11 @@
              System.out.printf("\"%s\" termina com \"ado\" \n", recebeNomes);
     }
 
-### indexOf e lastIndexOf
+### **indexOf e lastIndexOf**
 
 ### Permitem a localização de caracteres e substrings especificados em strings.
 
-### indexOf
+### **indexOf**
 
 ### Localiza a primeira ocorrência de um caractere em uma string. Se o método localizar o caractere, é retornado o índice do caractere na String, caso contrário retorna -1. Existem duas versões do indexOf que procuram caracteres em uma String.
 
@@ -361,7 +361,7 @@
 
 - ### 2ª versão – aceita dois argumentos inteiros – o caractere e o índice inicial em que a pesquisa da String deve iniciar.
 
-### lastIndexOf
+### **lastIndexOf**
 
 ### Localiza a última ocorrência de um caractere em uma string. O método procura do fim da string em direção ao começo, se encontrar o caractere é retornado o seu índice na string, caso contrário retorna -1. Existem duas versões do lastIndexOf que pesquisam por caracteres em uma string.
 
@@ -388,7 +388,7 @@
       System.out.printf("\"def\" está localizado no index %d\n", letras.indexOf("def", 7));
       System.out.printf("\"hello\" está localizado no index %d\n\n", letras.indexOf("hello"));
 
-### substring
+### **substring**
 
 ### Permite extrair substrings de strings e fornece 2 métodos substring para permitir que um novo objeto seja criado copiando parte de um objeto string existente. Cada método retorna um novo objeto desse tipo. Existem duas versões desse método que são:
 
@@ -406,7 +406,7 @@
       System.out.println("Substring (1,6): " + "["+substring+"]");
 
 
-### replace
+### **replace**
 
 ### Retorna um novo objeto contendo a string original com um trecho especificado substituído por outra expressão indicada. Esse método deixa a string original inalterada. A versão sobrecarregada do método replace permite substituir substrings em vez de caracteres individuais.
 
@@ -414,11 +414,11 @@
     String nomeAlterado = nome.replace('e', 'o');
     System.out.println(nomeAlterado);
 
-### toUpperCase
+### **toUpperCase**
 
 ### Retorna uma nova string com o conteúdo da original convertido para letras maiúsculas, mantendo a original inalterada.
 
-### toLowerCase
+### **toLowerCase**
 
 ### De forma semelhante ao anterior, o toLowerCase retorna uma cópia de uma string com todas as letras convertidas para minúsculo, mantendo a original inalterada.
 
@@ -428,11 +428,11 @@
     System.out.println(nomeA.toUpperCase());
     System.out.println(nomeB.toLowerCase());
 
-### trim
+### **trim**
 
 ### Gera um novo objeto string, removendo todos os caracteres de espaço em branco que aparecem no início ou no fim da string em que o método opera. O método retorna um novo objeto string contendo a string sem espaço em branco inicial ou final. A string original permanece inalterada.
 
-### toCharArray
+### **toCharArray**
 
 ### Cria um novo array de caracteres que contém uma cópia dos caracteres da variável apontada.
 
@@ -459,7 +459,7 @@
     for(char caracter : charArray) {
         System.out.print(caracter);
 
-## Fonte: https://www.devmedia.com.br/string-em-java-entendendo-e-utilizando-essa-classe/25503
+### Fonte: https://www.devmedia.com.br/string-em-java-entendendo-e-utilizando-essa-classe/25503
 
 
 # Operadores
@@ -473,7 +473,7 @@
 
 ## Classificação dos operadores
 
-## Atribuição
+## **Atribuição**
 
 ### O operador de atribuição é utilizado para definir o valor inicial ou sobrescrever o valor de uma variável.
 
@@ -540,7 +540,7 @@
 
     System.out.println("Inverteu " + !verdadeiro);
     
-   ## Ternário
+## Ternário
 
 ### O operador de condição ternária é uma forma resumida para definir uma condição e escolher por um dentre dois valores. Você deve pensar numa condição ternária, como se fosse uma condição IF normal, porém, de uma forma em que toda a sua estrutura estará escrita numa única linha.
 
@@ -570,7 +570,7 @@
  
    
    
-   ### **O operador ternário é aplicado para qualquer tipo de valor.**
+### **O operador ternário é aplicado para qualquer tipo de valor.**
 
 ## Relacionais
 
@@ -1090,7 +1090,7 @@
     * Que incrível !!!
     */
   
-Um comentário, não possui a finalidade de amenizar um algoritmo não estruturado, conforme as convenções da linguagem. 
+### Um comentário, não possui a finalidade de amenizar um algoritmo não estruturado, conforme as convenções da linguagem. 
   
     /*
     * Este método foi elaborado as pressas
