@@ -1,5 +1,11 @@
+/**
+ * The class Usuario is a public class that contains a main method that throws an exception
+ */
 public class Usuario {
     
+    /**
+     * The main function is the entry point of the program
+     */
     public static void main(String[] args) throws Exception{
 
         SmartTv smartTv = new SmartTv();

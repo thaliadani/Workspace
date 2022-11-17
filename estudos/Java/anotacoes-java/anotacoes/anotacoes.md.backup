@@ -711,6 +711,8 @@
 
 # Métodos
 
+### Fonte: https://glysns.gitbook.io/java-basico/sintaxe/metodos
+
 ### Todas as ações das aplicações são consideradas métodos.
 
 ### Uma classe é definida por atributos e métodos. Já vimos que atributos são, em sua grande maioria, variáveis de diferentes tipos e valores. Os métodos, por sua vez, correspondem a funções ou sub-rotinas disponíveis dentro de nossas classes.
@@ -797,6 +799,8 @@
 
 # Escopo
 
+### Fonte: https://glysns.gitbook.io/java-basico/sintaxe/escopo
+
 ### O escopo pode ser entendido como,o ambiente onde uma variável pode ser acessada. Em Java, o escopo de variáveis vai de acordo com o bloco onde ela foi declarada. 
 
 ### A variável é criada no primeiro acesso à ela, se tornando inacessível após o interpretador sair do bloco de execução, ao qual ela pertence. Portanto, esta variável não pode ser lida ou manipulada por rotinas e códigos que estão fora do seu bloco de declaração, ou seja, fora do escopo da variável. 
@@ -839,6 +843,8 @@
     }   
   
 # Palavras reservadas
+
+### Fonte: https://glysns.gitbook.io/java-basico/sintaxe/palavras-reservadas
 
 ### Palavras reservadas, são identificadores de uma linguagem que já possuem uma finalidade específica, portanto, não podem ser utilizados para nomear variáveis, classes, métodos ou atributos. 
 
@@ -1013,6 +1019,8 @@
 
 # Documentação
 
+### Fonte: https://glysns.gitbook.io/java-basico/sintaxe/documentacao
+
 ### Uma das maiores características da linguagem Java é que, desde suas primeiras versões, tínhamos em nossas mãos, uma documentação rica e detalhada dos recursos da linguagem.
 
 ### Conforme site oficial, podemos compreender e explorar, todos os recursos organizados por pacotes e classes bem específicas, sem nem mesmo escrever uma linha de código.
@@ -1124,7 +1132,10 @@
     javadoc -encoding UTF-8 -docencoding ISO-8859-1  -d ../docs  src/*.java
     
   
+
 # Terminal e Argumentos
+
+### Fonte: https://glysns.gitbook.io/java-basico/sintaxe/terminal-e-argumentos
 
 ### Nem sempre executamos nosso programa Java pela IDE, já pensou, nossos clientes tendo que instalar o Eclipse ou VsCode para rodar o sistema em sua empresa ?
 
