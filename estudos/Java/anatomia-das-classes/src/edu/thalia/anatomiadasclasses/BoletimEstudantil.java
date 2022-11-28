@@ -1,7 +1,5 @@
 package edu.thalia.anatomiadasclasses;
 
-import javax.lang.model.util.ElementScanner14;
-
 /**
  * The class BoletimEstudantil has a main method that prints out a message based
  * on the value of the

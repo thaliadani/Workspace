@@ -1,8 +1,0 @@
-{
-    "java.project.sourcePaths": [
-        "sistema-smart-tv/src",
-        "sistema-smart-tv",
-        "anatomia-das-classes/src",
-        "java-terminal/src"
-    ]
-}

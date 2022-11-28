@@ -88,7 +88,7 @@
  
  # Tipos e Variáveis
  
- ![](2011-06-15-java-tipos-primitivos-01.png)
+![](pictures/2011-06-15-java-tipos-primitivos-01.png)
 
 - ### O ponto nos números em java significa vírgula. Exemplo: _double_ salarioMinimo = 2.500;
 
@@ -1153,11 +1153,11 @@
   
 ### Observe que nosso projeto Java criado por uma IDE, terá uma pasta chamada bin. É nesta pasta que ficarão os arquivos .class, o nosso bytecode.
 
-![](image1.png)
+![](pictures/image1.png)
 
 ### Mesmo usando uma IDE, nós sempre precisaremos identificar aonde se encontram as classes do nosso projeto, no meu caso está em: C:\estudos\dio-trilha-java-basico\java-terminal.
 
-![](image2.png)
+![](pictures/image2.png)
 
 ## Terminal
 
@@ -1171,7 +1171,7 @@
 
 4. ### Agora digite o comando:java MinhaClasse (nome da sua classe sem a extensão .class).
 
-![](image3.png)
+![](pictures/image3.png)
 
 ## Argumentos
 
@@ -1197,9 +1197,9 @@
 
 ### Passando valores aos argumentos pelo VsCode:
 
-![](image4.png)
+![](pictures/image4.png)
 
-![](image5.png)
+![](pictures/image5.png)
 
     {
         "version": "0.2.0",
@@ -1259,3 +1259,89 @@
 ### [code.visualstudio.com](https://code.visualstudio.com/docs/java/java-debugging)
 
 ### [linuxtut.com](https://linuxtut.com/pass-parameters-when-debugging-vscode-java.-note-462e0)
+
+# Lógica Condicional e Controle de Fluxos em Java
+
+## Operadores Relacionais
+
+### [Link da Aula](https://web.dio.me/course/logica-condicional-e-controle-de-fluxos-em-java/learning/1b4108ec-ccd1-4a2d-905d-b78a83711f6c?back=/track/potencia-tech-powered-ifood-java-beginners&tab=undefined&moduleId=undefined)
+
+### "São símbolos especiais quais são capazes de realizar comparações entre determinados operandos e, em seguida, retornar um resultado"
+
+### Tipos:
+
+- ### Similaridade: igual,diferente.
+
+- ### Tamanho: maior, maior igual, menor, menor igual.
+
+## Operadores Lógicos
+ 
+### [Link da Aula](https://web.dio.me/course/logica-condicional-e-controle-de-fluxos-em-java/learning/8b2bf4b8-22a4-4885-a12a-a75d22fd876e?back=/track/potencia-tech-powered-ifood-java-beginners&tab=undefined&moduleId=undefined)
+
+### "São símbolos especiais quais são capazes de realizar comparações lógicas entre operandos lógicos ou expressões e, em seguida,retornar um resultado"
+
+### Tipos:
+
+- ### Conjunção
+
+### Operação lógica que só é verdadeira quando ambos os operandos ou expressões envolvidas são verdade.
+
+### Simbologia: &&
+
+### Terminologia: and(e)
+
+                 0-E  |  0-E  |  R
+                 ------------------
+                  V   |   V   |  V
+                  V   |   F   |  F
+                  F   |   V   |  F
+                  F   |   F   |  F
+### O - Operando, E-Expressão, R-Resultado
+
+- ### Disjunção
+
+### Operação que só é falsa quando ambos os operandos ou expressões envolvidas são falsos.
+
+### Simbologia: ||
+
+### Terminologia: or(ou)
+
+                 0-E  |  0-E  |  R
+                 ------------------
+                  V   |   V   |  V
+                  V   |   F   |  V
+                  F   |   V   |  V
+                  F   |   F   |  F
+### O - Operando, E-Expressão, R-Resultado
+
+- ### Disjunção exclusiva
+
+### Operação que só é verdadeira quando ambos os operandos ou expressões envolvidas são opostos.
+
+### Simbologia: ^
+
+### Terminologia: xor
+
+                 0-E  |  0-E  |  R
+                 ------------------
+                  V   |   V   |  F
+                  V   |   F   |  V
+                  F   |   V   |  V
+                  F   |   F   |  F
+### O - Operando, E-Expressão, R-Resultado
+
+- ### Negação
+
+### Operação que inverte o valor lógico de um operando ou expressão.
+
+### Simbologia: !
+
+### Terminologia: inverção
+
+                     0-E  |  R
+                    ------------
+                      V   |  F   
+                      F   |  V                                                    
+### O - Operando, E-Expressão, R-Resultado
+
+
