@@ -867,7 +867,7 @@
 ## Primitivos
 
 - ### **boolean:** um valor indicando verdadeiro ou falso;
-​
+
 - ### **byte:** um inteiro de 8 bits (signed);
 ​
 - ### **char:** um character unicode (16-bit unsigned);
@@ -1344,4 +1344,94 @@
                       F   |  V                                                    
 ### O - Operando, E-Expressão, R-Resultado
 
+### Curiosidades
 
+- ### Operadores bitwise: & e |
+- ### Operadores shift: ~, >>, >>>, <<
+
+### A linguagem de programação Java também fornece operadores que executam operações bitwise e bit shift em tipos integrais. Os operadores discutidos nesta seção são menos comumente usados. Portanto, sua cobertura é breve; a intenção é simplesmente conscientizá-lo de que esses operadores existem.
+
+### O operador de complemento bitwise unário "" inverte um padrão de bits; ele pode ser aplicado a qualquer um dos tipos integrais, tornando cada "0" um "1" e cada "1" um "0". Por exemplo, contém 8 bits; aplicar esse operador a um valor cujo padrão de bits é "00000000" mudaria seu padrão para "11111111".~byte
+
+### O operador de deslocamento à esquerda assinado "" desloca um padrão de bits para a esquerda, e o operador de deslocamento à direita assinado "" desloca um pouco o padrão para a direita. O padrão de bits é dado pelo operando esquerdo e o número de posições a serem deslocadas pelo operando direito. O operador de deslocamento à direita não assinado "" desloca um zero para a posição mais à esquerda, enquanto a posição mais à esquerda depende da extensão do sinal.<<>>>>>">>"
+
+- ### O operador bitwise executa uma operação bitwise AND.&
+
+- ### O operador bitwise executa uma operação OR exclusiva bitwise.^
+
+- ### O operador bitwise executa uma operação OR inclusiva bitwise.|
+
+### O programa a seguir, BitDemo, usa o operador bitwise And para imprimir o número "2" para a saída padrão.
+
+    class BitDemo {
+       public static void main(String[] args) {
+          int bitmask = 0x000F;
+          int val = 0x2222;
+          // prints "2"
+          System.out.println(val & bitmask);
+       }
+    }
+
+## Controle de Fluxos em Java
+
+### [Link da Aula](https://web.dio.me/course/logica-condicional-e-controle-de-fluxos-em-java/learning/285dc72b-5424-4bd5-8893-3a1402daaf5b?back=/track/potencia-tech-powered-ifood-java-beginners&tab=path&moduleId=undefined)
+
+### São estruturas que tem a capacidade de direcionar o fluxo de execução do código.
+
+### Tipos:
+
+- ### Decisão
+
+### Estrutura que avalia uma condição booleana ou variável para direcionar o fluxo de execução.
+
+### if(se), else,if-else, if-else-if
+### Exemplos:
+    
+    if(idade>18){        if(aprovado){    if(casado && temFilhos){
+    }                    }else{           }else if(casado && semFilhos){
+                         }                }else{
+                                          }
+
+### Operador ternário
+### Exemplos:
+
+    condição ? true : false;      condição ? true : null;
+                                   
+    ligado ? desligar : ligar;    emMovimento ? freia : null
+
+### Obs: Evite o máximo utilizar operador ternário.
+
+### Switch(escolha)
+
+### Variáveis que podem ser usadas: byte, short, char, **int**, **Enum**, **String**. 
+
+### Exemplo: 
+   
+    switch(olhos){
+     case "AZUIS" :
+      break;
+     case "VERDES" :
+      break;
+     case "CASTANHOS" :
+      break;
+     default;
+      break;
+    }
+
+- ### Repetição: for, while,do while.
+
+- ### Interrupção: break,continue e return.
+
+### Boas práticas
+
+- ### Switch é para valores exatos e if para expressoes booleanas.
+
+- ### Evitar usar o default do switch para "casos genéricos".
+
+- ### Evitar o efeito "flecha" dos if's.
+
+- ### Evitar muitos if's aninhados.
+
+- ### Usar a boa prática da aula 2 para diminuir o tamanho if.
+
+## Blocos
