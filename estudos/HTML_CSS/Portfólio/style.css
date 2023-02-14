@@ -1,0 +1,12 @@
+body {
+    background-color: #20262E;
+    color: #E9E8E8;
+    font-family: Krona One;
+         
+}
+
+.titulo-destaque {
+    color: #913175;
+    border: 1px #913175;
+    padding: 10px;
+}
