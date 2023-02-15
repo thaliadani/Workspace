@@ -1,0 +1,165 @@
+# HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags
+
+## A importância da documentação
+
+### **O que é:**
+
+### A documentação é um guia que toda pessoa desenvolvedora deve levar a sério no dia a dia, é através dela que aprendemos como funcionam as linguagens de programação e também ferramentas e bibliotecas no mundo da tecnologia.
+
+### **Sua importância:**
+
+### A documentação é muito importante no aprendizado e no desenvolvimento de aplicações. Afinal quem melhor que a pessoa que criou a ferramenta para nos orientar sobre as suas funcionalidades não é mesmo?
+
+### **Quando devemos utilizar:**
+
+### Devemos ler a documentação sempre que precisamos saber a estrutura de um método, ou quando queremos saber algum comando ou recurso de uma biblioteca, ou até mesmo quando esquecemos certa funcionalidade e precisamos relembrar.
+
+### **Outra forma de ajuda:**
+
+### Existem também as comunidades de tecnologia e programação que são bem úteis para tirarmos nossas dúvidas e aprendermos mais, como por exemplo a Stackoverflow que é uma das maiores comunidades de ajuda sobre programação e tecnologia atualmente, é uma comunidade onde você vai encontrar dúvidas sobre quase todas as linguagens de programação entre outras ferramentas, super recomendável acessá-la.
+
+### A w3schools também é uma ótima opção para quem precisa aprender algum método novo ou consultar exemplos sobre determinada linguagem, é um site bem completo e de fácil compreensão.
+
+## A estrutura básica do HTML
+
+### Para criar um arquivo HTML funcional devemos seguir um padrão de construção, utilizando um conjunto de elementos, ou seja, os hipertextos, que se conectam entre si formando a página. Como já visto anteriormente, os elementos HTML ou também chamados de tags HTML, são utilizados para informar ao navegador que tipo de estrutura é essa que está sendo construída, podendo ser títulos, parágrafos, imagens, links, entre outros.
+
+### Um exemplo prático dessa estrutura básica seria:
+
+	<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Document</title>
+	</head>
+	<body>
+	
+	</body>
+	</html>
+
+## Tags semânticas
+
+### Quando começamos um arquivo HTML, há uma estrutura padrão que é usada em qualquer projeto. É importante saber quais são as tags que precisam ser implementadas e entender suas funções dentro do código. Para facilitar esse processo, utilizamos as tags semânticas, que são tags descritivas sobre o conteúdo que armazenam, como é o caso das tags header, main e footer, que conhecemos nessa aula. Elas servem tanto para otimizar a leitura pelos navegadores, como pelas pessoas desenvolvedoras que vão fazer a manutenção do código.
+
+### Para aprender mais sobre as tags que fazem parte da base de um arquivo HTML, você pode ler a documentação MDN “Semântica” e conhecer outros elementos semânticos disponíveis para tornar o seu código mais claro, seja para outras pessoas programadoras, para navegadores ou mecanismos de buscas.
+
+## Escolhendo as cores do projeto
+
+### **Coolors**
+
+### O Coolors possui uma interface bem clara. Com a barra de espaço do seu teclado, você consegue criar várias combinações, e uma das funções mais legais é a opção travar, que você pode usar se gostar de apenas uma cor, e assim que você clica nela, consegue continuar elaborando outras combinações levando em conta a cor que você escolheu.
+
+### **Adobe Color**
+
+### O Adobe color apresenta um Color Wheel (roda de cores) que pode ser ajustado de maneiras variadas para obter uma harmonia de cores, e você pode aplicar diversas regras de harmonia de cores, como o modo análogo, monocromático, tríade, complementar, quadrado, composto, entre outros.
+
+### **Color Hunt**
+
+### O Color Hunt dispõe de diversas paletas elaboradas. Você consegue encontrar a combinação que mais te agrada e consegue buscar por palavras-chave como pastel, vintage, neon e assim por diante. E caso não encontre nenhuma que te agrade, você consegue criar a sua própria paleta clicando nos três pontinhos do canto superior direito da página.
+
+### **Color Tool - Material Design**
+
+### O Color Tool é ótimo para criar, compartilhar e aplicar paletas de cores à interface do usuário, bem como é possível medir o nível de acessibilidade de qualquer combinação de cores na aba accessibility.
+
+## Destacando o texto
+
+### Pode destacar o texto utilizando a tag <strong>, porém existe outra tag que também é muito utilizada para isso que é a tag <span>, diferente da strong a span não deixa em negrito por padrão mas é uma ótima forma de marcar trechos do texto em HTML. Veja:
+
+### HTML:
+		
+	<h1>Formação de <span>Front-end</span></h1>
+
+### CSS:
+	
+	p{
+	            font-weight: bold;
+	}
+	
+	span{
+	            color: #22D4FD;
+	            border: 1px solid #22D4FD;
+	            padding: 10px;
+	}
+
+### Explicando o código acima:
+
+- ### font-weight: bold; (Texto em negrito)
+
+- ### color: #22D4FD; (Cor do texto azul)
+
+- ### border: 1px solid #22D4FD; (Borda com 1 px de largura, do tipo sólida e cor da borda azul)
+
+- ### padding: 10px; (Espaçamento interno de 10px)
+
+### RESULTADO:
+
+![Imagem](https://caelum-online-public.s3.amazonaws.com/2808-html-css-ambiente-arquivos-tags/aula5-img5.png)
+
+## Class
+
+### O atributo class permite ao CSS selecionar e acessar elementos específicos através dos seletores de classe, mas para entender de forma mais clara e objetiva, você pode acessar a documentação oficial [MDN](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Global_attributes/class "MDN") para tirar dúvidas.
+
+### **Nomes de classes no CSS**
+
+### Quer entender as boas práticas para dar um nome nas classes do CSS? Recomendamos a leitura do artigo [Nomes de classes no CSS](https://www.alura.com.br/artigos/nomes-de-classes-no-css "Nomes de classes no CSS"), que aborda de forma simples e prática desse conceito.
+
+## Seletores
+
+### A documentação [MDN](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Selectors "MDN") para se aprofundar ainda mais no assunto.
+
+### **Reset CSS**
+
+### [O que é reset css](https://www.alura.com.br/artigos/o-que-e-reset-css "Artigo")
+
+## O que é Viewport?
+
+### Em computação gráfica, a viewport é a porção de área visível de um plano e é utilizada como unidade de medida no CSS para criar páginas Web 100% responsivas. Em outras palavras, a viewport varia de dispositivo para dispositivo, por exemplo em computadores, tablets e celulares, cada tela possui dimensões diferentes e enquanto uma página não responsiva apresentaria os elementos desproporcionais, uma página responsiva utilizando viewport teria seus elementos adequados a cada proporção.
+
+### [Guia de unidades no css](https://www.alura.com.br/artigos/guia-de-unidades-no-css "Guia")
+
+## Guia completo do Flexbox
+
+### [Guia do flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/ "Guia do flexbox")
+
+## Uma boa prática ao escrever seu código
+
+### Indentação é o espaçamento aplicado no início das linhas de código que ajuda a manter uma hierarquia visual. Em algumas linguagens esse não é um elemento que impede o código de ser compilado, mas manter o código indentado é fundamental para facilitar sua leitura, principalmente para terceiros.
+
+### Para ilustrar melhor, abaixo estão dois exemplos:
+
+### Código não indentado
+
+	<main>
+	<div class=”titulos”>
+	<h1>Título da página</h1>
+	</div>
+	<div class=”paragrafos”>
+	<p>Primeiro parágrafo</p>
+	<p>Segundo parágrafo</p>
+	</div>
+	</main>
+
+### Código indentado
+
+	<main>
+		<div class=”titulos”>
+			<h1>Título da página</h1>
+		</div>
+		<div class=”paragrafos”>
+			<p>Primeiro parágrafo</p>
+			<p>Segundo parágrafo</p>
+		</div>
+	</main>
+
+
+## Google Fonts
+
+### [Google Fonts](https://fonts.google.com/ "Google Fonts") é uma biblioteca da Google com mais de 1000 fontes livres licenciadas. Além de um diretório web interativo para navegar na biblioteca, existem atalhos para usar convenientemente as fontes através do CSS.
+
+## Quando utilizar div
+
+### A tag div define uma divisão em um documento HTML e costuma ser usada como um contêiner para outros elementos, o que ajuda na estilização do bloco. Por esse motivo, a div é frequentemente utilizada quando precisamos agrupar elementos sem usar as tags semânticas do HTML. Isso acontece porque a div não tem valor semântico. Portanto, não significa nada para os navegadores e mecanismos de pesquisa.
+
+### Além do mais, por ser muito utilizada para agrupar elementos, acaba facilitando na organização das informações nos layouts. Dessa forma, pode ser formatada e manipulada organicamente via CSS. Geralmente vem acompanhado de atributos de ID e classe para facilitar essa organização e formatação.
