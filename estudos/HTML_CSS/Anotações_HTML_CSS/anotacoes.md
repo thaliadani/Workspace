@@ -333,3 +333,20 @@
 
 ### Você pode aprender muito mais aqui na Alura sobre responsividade através desse ótimo curso sobre Layouts Responsivos, acesse o [link](https://cursos.alura.com.br/course/css-flexbox-layouts-responsivos "css-flexbox-layouts-responsivos" ).
 
+## Atributo HTML source srcset
+
+### Exemplo
+
+### Um elemento picture com dois arquivos de origem e uma imagem alternativa:
+
+	<picture>
+	  <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+	  <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+	  <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+	</picture>
+
+### Definição e Uso
+
+### O srcset atributo especifica a URL da imagem a ser usada em diferentes situações.
+
+### Este atributo é obrigatório quando source usado em picture.
