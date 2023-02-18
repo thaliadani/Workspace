@@ -230,3 +230,105 @@
 ### - Ao usar comentários para testar sua aplicação, lembre-se de apagar essas notas quando terminar, para que seu código não fique desorganizado e com partes desnecessárias;
 
 ### - Por fim, lembre-se sempre que um código descritivo é mais duradouro que muitos comentários. Quando estiver trabalhando com HTML, lembre-se de usar as Tags semânticas e ao criar suas classes CSS, adicione nomes significativos. Assim, seu código ficará naturalmente descritivo e não dependerá tanto dos comentários, que podem ser apagados ou se perderem ao longo de manutenções =) .
+
+## Hover
+
+### O hover é usado para selecionar elementos quando você passa o mouse sobre eles. O único elemento que ele não estiliza são os links, que possuem seletores próprios.
+
+## As variáveis no mundo da programação
+
+### **Um armário cheio de gavetas!**
+
+### Imagine que você trabalhe em uma sala de arquivos, que possui um armário muito grande e cheio de gavetas. Todos os dias, pessoas trazem seus objetos para que você guarde em uma gaveta para eles e para isso, te entregam uma etiqueta com um nome que será colado nessa gaveta que armazenará o objeto da pessoa.
+
+### Ana te entregou uma caneta e uma etiqueta com o nome: canetaDaAna, e você guardou a caneta dela em uma gaveta, onde colou a etiqueta. Ela escolheu o nome canetaDaAna, mas poderia ser qualquer outro nome e seu conteúdo poderia ser qualquer um também, como um livro, por exemplo, e não uma caneta.
+
+### Quando Ana precisar da caneta, ela irá te chamar e pedir pela canetaDaAna, e você a entregará o conteúdo da gaveta, ou seja, a caneta.
+
+### **E como isso se relaciona com as variáveis?**
+
+### Seu armário de gavetas no exemplo acima representa a memória do computador. Quando criamos uma variável, estamos solicitando ao computador que reserve uma “gavetinha” em sua memória para que guarde algo que precisaremos usar futuramente, e fazemos isso atribuindo um nome de variável que poderemos chamar a qualquer momento e que retornará o conteúdo que guardamos dentro dela. Esse nome pode ser um nome qualquer, no entanto sempre que solicitado ele trará como resposta aquilo que você armazenou nele.
+
+### **O que são variáveis?**
+
+### Variáveis são elementos que permitem que valores sejam manipulados ao longo da execução de seu código, através da definição de um nome para armazenar um valor que será usado repetidas vezes. Essa definição do nome e do conteúdo que será contido nele é o que nós chamamos de declaração.
+
+### Esse valor pode ser alterado ao longo do código, por isso o nome “váriavel”.
+
+### Observe o seguinte exemplo:
+
+	:root{
+	     --tamanho-da-fonte:  24px;
+	}
+
+### Criamos no :root, ou seja, no escopo global de um código, uma variável que foi declarada com o nome --tamanho-da-fonte e seu valor foi atribuído como 24px. Toda vez que chamarmos pelo nome --tamanho-da-fonte, iremos obter como retorno o valor 24px.
+
+### Variáveis são utilizadas diariamente pelas pessoas desenvolvedoras para que consigam manipular e reutilizar valores em seu código e estão presentes nas mais diversas linguagens de programação, pois são elementos base ao criar qualquer código que tenha a mínima funcionalidade. Portanto, conforme você evoluir em seus conhecimentos no desenvolvimento é certo que irá lidar muito com variáveis.
+
+### Para saber mais sobre as variáveis em CSS, você pode conferir a [documentação](https://developer.mozilla.org/pt-BR/docs/Web/CSS/Using_CSS_custom_properties "Using_CSS_custom_properties" ).
+
+## A importância de utilizar as unidades de medidas relativas
+
+### É muito importante utilizarmos as unidades de medidas relativas nos textos e títulos ou até mesmo nos elementos do nosso site, como por exemplo, as imagens.
+
+### Essa medida ajuda as pessoas com baixa visão que precisam alterar a aparência do navegador ou aplicar mais zoom para aumentar o tamanho dos elementos.
+
+### Lembrando que podemos diminuir o zoom da página também quando quisermos ter uma visão mais ampla dos elementos. Muito legal não é mesmo? :)
+
+### Esse artigo da Alura sobre sobre unidades de medidas pode ajudar bastante o seu aprendizado: [Artigo sobre unidade de medidas ](https://www.alura.com.br/artigos/guia-de-unidades-no-css "Artigo sobre unidade de medidas" ).
+
+### Você também pode ver a documentação sobre as [Unidades de medidas](https://www.w3schools.com/cssref/css_units.php "Unidades de medidas" ).
+
+## Dev Tools - A melhor amiga de quem desenvolve
+
+### A ferramenta de desenvolvimento (Dev Tool) ajuda muito no processo de criação e desenvolvimento de projetos web. Além de inspecionar os nossos códigos HTML e CSS, podemos fazer algumas alterações temporárias e ela nos mostra uma prévia de outros tamanhos de telas e dispositivos como tablets e celulares e isso ajuda muito na hora de criarmos a versão mobile e toda a parte responsiva.
+
+![Imagem](https://caelum-online-public.s3.amazonaws.com/2884-html-css/aula2-img1.png)
+
+### Gostou? :) Agora você pode tentar também!
+
+### Para abrir o Dev Tools, quando estiver com o navegador aberto aperte as teclas CTRL + SHIFT + C no Chrome do Windows,ou COMMAND + OPTION + C no MAC ou você pode clicar com o botão direito do mouse na tela do navegador e clicar em inspecionar na lista suspensa ou inspect caso esteja em inglês. Veja:
+
+### **Com o Dev Tools aberto você pode:**
+
+### - Escolher o tipo de dispositivo (celular, tablet etc);
+
+### - Inspecionar os elementos HTML;
+
+### - Alterar o tamanho da tela;
+
+### - Alterar os estilos CSS da página temporariamente;
+
+### - Apertar as teclas CTRL + SHIFT + M para abrir a visualização responsiva.
+
+![Imagem](https://caelum-online-public.s3.amazonaws.com/2884-html-css/aula2-img2.png)
+
+## Media Querie
+
+### Sabia que você pode ter mais de uma media querie em seu projeto? É possível definir um tamanho de tela para o celular outro para o tablet e deixar a “padrão” para o desktop.
+
+### Exemplo:
+
+### Podemos definir uma largura máxima de “480px” para o celular: @media (max-width: 480px), e em outra media querie definir uma largura máxima de “800px” para os tablets: @media (max-width: 800px), e então atribuímos os ajustes necessários dentro de cada media querie, dessa forma teremos nosso site 100% responsivo.
+
+### Podemos também definir intervalos para os tamanhos de telas com um único Media querie, atribuímos o valor mínimo e depois o valor máximo separando ele pelo atributo and, veja: @media (min-width: 480px ) and (max-width: 800px), nesse caso os estilos serão aplicados em telas de no mínimo “480px” e de no máximo “800px”.
+
+### Lembrando que a maioria dos acessos a internet hoje em dia é através dos dispositivos móveis, portanto, não se esqueça de sempre deixar os seus projetos e sites responsivos.
+
+## O que é responsividade
+
+### Já notou que quando acessamos alguns sites eles mudam o seu layout a depender do dispositivo? Por exemplo, se você acessar o site da Alura no computador, o layout será um pouco diferente do que se você acessá-lo pelo celular.
+
+### **Mas, que ferramenta é responsável por isso?**
+
+### A responsividade! Quando o site adapta o tamanho de suas páginas(Layout) de acordo com o tamanho da tela do dispositivo no qual ele está sendo acessado ou quando diminuímos o tamanho da janela do navegador (essa transformação pode ser feita também quando aplicamos um zoom na página), dizemos que este site é um site responsivo.
+
+### A responsividade não só altera o tamanho das fontes e elementos, como suporta qualquer mudança como por exemplo: na cor de fundo, cor de texto, bordas, etc. Isso depende dos estilos aplicados dentro das medias queries no arquivo CSS.
+
+### Se você atribuir uma cor de fundo diferente no body dentro da media query, a cor só vai alterar quando a tela atingir o tamanho definido por ela.
+
+### Nesse exemplo foi aplicada a cor roxa no body dentro da media query utilizada no projeto para telas de no máximo 1200 pixels, veja que legal o resultado:
+
+![Imagem](https://caelum-online-public.s3.amazonaws.com/2884-html-css/aula3-gif1.gif)
+
+### Você pode aprender muito mais aqui na Alura sobre responsividade através desse ótimo curso sobre Layouts Responsivos, acesse o [link](https://cursos.alura.com.br/course/css-flexbox-layouts-responsivos "css-flexbox-layouts-responsivos" ).
