@@ -1,0 +1,22 @@
+.gallery{
+    padding: 20px;
+    padding-left: 0;
+}
+
+.gallery .gallery__list{
+    display: flex;
+    flex-direction:row;
+}
+
+.gallery .gallery__list .gallery__images{
+    margin-left: 25px;
+}
+
+.gallery .gallery__list .gallery__images:first-child{
+    margin-left:0px;
+}
+
+.gallery .gallery__list .gallery__images a img{
+    border:solid 6px white;
+    border-radius:15px;
+}
