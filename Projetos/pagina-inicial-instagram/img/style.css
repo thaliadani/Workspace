@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Segoe UI" sans-serif;
+    font-size: 14px;
+}
+
+:root{
+    --background-color: #ffffff;
+    --color-primary: ;
+}
+
+body{
+    width: 100%;
+    min-width: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.container__phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.container__phone img{
+    height: 50rem;
+}
+
+.container__continue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.continue__group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem;
+    border: 1px solid #cccccc;
+    margin-bottom: 3rem;  
+}
+
+.continue__group:nth-child(1){
+    min-height: 19rem;
+}
+
+.group__logo{
+    height: 3rem;
+}
+
+.group__profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.group__profile img{
+    height: 6rem;
+}
+
+.group__login{
+    background-color: #2373eb;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.group__logout{
+    color: #2373eb;
+    margin-top: 1rem;
+}
+
+.group__not__account{
+    color: #666464;
+}
+
+.account__link{
+    color: #2373eb;
+}
+
+.continue__app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.app__download{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 1rem;
+}
+
+.download__button{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.download__button:nth-child(1){
+    background-image: url(/img/apple-button.png);
+}
+
+.download__button:nth-child(2){
+    background-image: url(/img/googleplay-button.png);
+}
+
+@media(max-width:1024px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media(max-width:650px){
+
+    body{
+        background-color: #ffffff;
+    }
+
+    .container{
+        width: 90%;  
+    }
+    .container__phone{
+        display: none;
+    }
+
+    .container__continue{
+        width: 100%;
+    }
+
+    .continue__group{
+        border: none;
+    }
+}
