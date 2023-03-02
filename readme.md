@@ -18,6 +18,7 @@
       <li>HTML e CSS</li>
       <li>JAVA</li>
     </ul>
+  <br>
   <li>Projetos</li>
     <ul>
       <li>Alura Books</li>
