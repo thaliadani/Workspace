@@ -14,17 +14,22 @@
 
 <ul>
   <li>Estudos</li>
+     <ul>
+      <li>GIT e GITHUB</li>
+      <li>HTML e CSS</li>
+      <li>JAVA</li>
+    </ul>
   <li>Projetos</li>
-  <ul>
-  <li>alura-books</li>
-  <li>alura-plus</li>
-  <li>animations</li>
-  <li>landing-page-stranger-things</li>
-  <li>multiverso-spiderman</li>
-  <li>netflix-clone</li>
-  <li>pagina-inicial-instagram</li>
-  <li>portfolio</li>
-  </ul>
+    <ul>
+      <li>alura-books</li>
+      <li>alura-plus</li>
+      <li>animations</li>
+      <li>landing-page-stranger-things</li>
+      <li>multiverso-spiderman</li>
+      <li>netflix-clone</li>
+      <li>pagina-inicial-instagram</li>
+      <li>portfolio</li>
+    </ul>
   
 </ul>
 
