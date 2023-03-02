@@ -10,7 +10,6 @@
 </div><br>
 
 <div>
-<h2>Repositórios</h2>
 
 <ul>
   <li>Estudos</li>
@@ -21,14 +20,14 @@
     </ul>
   <li>Projetos</li>
     <ul>
-      <li>alura-books</li>
-      <li>alura-plus</li>
-      <li>animations</li>
-      <li>landing-page-stranger-things</li>
-      <li>multiverso-spiderman</li>
-      <li>netflix-clone</li>
-      <li>pagina-inicial-instagram</li>
-      <li>portfolio</li>
+      <li>Alura Books</li>
+      <li>Alura Plus</li>
+      <li>Animations</li>
+      <li>Landing Page Stranger Things</li>
+      <li>Multiverso do Spider-man</li>
+      <li>Netflix Clone</li>
+      <li>Pagina inicial do instagram</li>
+      <li>Portfólio</li>
     </ul>
   
 </ul>
