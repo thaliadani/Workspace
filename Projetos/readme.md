@@ -8,22 +8,28 @@
 <img src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg">
 </div><br>
 
-<div>
 
-<ul>
-    <li>Alura Books</li>
+<div>
+    <h2>Alura Books</h2>
+    
     <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
     <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
     
-    <br>    
-    
-    <li>Alura Plus</li>
-    <li>Animations</li>
-    <li>Landing Page Stranger Things</li>
-    <li>Multiverso do Spider-man</li>
-    <li>Netflix Clone</li>
-    <li>Pagina inicial do instagram</li>
-    <li>Portfólio</li>
-</ul>
-
+       
 </div><br>
+
+    <h2>Alura Plus</h2>
+
+    <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
+    <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
+    
+    <br>   
+
+    <h2>Animations</h2>
+    <h2>Landing Page Stranger Things</h2>
+    <h2>Multiverso do Spider-man</h2>
+    <h2>Netflix Clone</h2>
+    <h2>Pagina inicial do instagram</h2>
+    <h2>Portfólio</h2>
+
+
