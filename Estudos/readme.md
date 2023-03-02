@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
 <br>
-<img src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg">
+
 </div><br>
 
 <div>
