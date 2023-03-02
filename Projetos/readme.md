@@ -14,9 +14,9 @@
     <li>Alura Books</li>
     <li>Alura Plus</li>
     <li>Animations</li>
-    <li>Landing Page Stranger Things</li>
-    <li>Multiverso do Spider-man</li>
-    <li>Netflix Clone</li>
+    <li>Landing Page Stranger Things</li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+    <li>Multiverso do Spider-man</li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+    <li>Netflix Clone</li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
     <li>Pagina inicial do instagram</li>
     <li>Portfólio</li>
 </ul>
