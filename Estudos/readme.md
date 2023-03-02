@@ -10,7 +10,7 @@
     </ul>
   <li>HTML e CSS</li>
     <ul>
-      <li>Anotações/li>
+      <li>Anotações</li>
       <li>Portfolio</li>
     </ul>
   <li>JAVA</li>
