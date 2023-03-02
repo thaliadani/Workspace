@@ -13,7 +13,10 @@
 <ul>
     <li>Alura Books</li>
     <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
+    <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
+    
     <br>    
+    
     <li>Alura Plus</li>
     <li>Animations</li>
     <li>Landing Page Stranger Things</li>
