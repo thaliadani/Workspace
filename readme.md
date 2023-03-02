@@ -10,7 +10,7 @@
 </div><br>
 
 <div>
-<h2>Pastas</h2>
+<h2>Repositórios</h2>
 
 <ul>
   <li>Estudos</li>
