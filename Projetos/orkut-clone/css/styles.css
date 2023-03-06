@@ -25,7 +25,7 @@ body{
     background-color: #ffffff;
     width: 80%;
     max-width: 650px;
-    height: 60vh;
+    height: 70vh;
     border-radius: 20px;
     margin: auto;
     margin-top: 5%;
@@ -45,7 +45,7 @@ body{
 }
 
 #field__title{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     color: #333232;
     margin-top: 20px;
@@ -119,4 +119,37 @@ body{
     font-size: 20px;
     font-weight: bold;
 } 
+
+@media screen and (min-width:650px){
+
+    .container{
+        margin-top: 10px;
+    }
+
+    .fields__textboxs{
+        height: 150px;
+    }
+
+    .fields__textboxs > input{
+        height: 60px;
+    }
+
+    .fields__recovery{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .logo > img{
+        height: 70px;
+    }
+
+    .container{
+        height: 75vh;
+    }
+
+}
+
+
+
 
