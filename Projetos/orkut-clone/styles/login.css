@@ -1,110 +1,93 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-}
-
-
-body{
-    background-color: #f1b8dc;
-}
-
-.logo{
+.logo {
     display: flex;
     justify-content: center;
     margin-top: 60px;
 }
 
-.logo > img{
+.logo>img {
     height: 100px;
 }
 
-.container{
-    background-color: #ffffff;
+.container {
+    background-color: var(--color-white);
     width: 80%;
     max-width: 650px;
     height: 70vh;
     border-radius: 20px;
     margin: auto;
     margin-top: 5%;
-    
-    box-shadow: 11px 9px 20px 4px rgba(84,84,84,0.64);
-    -webkit-box-shadow: 11px 9px 20px 4px rgba(84,84,84,0.64);
-    -moz-box-shadow: 11px 9px 20px 4px rgba(84,84,84,0.64);
+
+    box-shadow: 11px 9px 20px 4px rgba(84, 84, 84, 0.64);
+    -webkit-box-shadow: 11px 9px 20px 4px rgba(84, 84, 84, 0.64);
+    -moz-box-shadow: 11px 9px 20px 4px rgba(84, 84, 84, 0.64);
 }
 
-.fields{
+.fields {
     margin: 5% 10%;
 }
 
-.fields__title{
+.fields__title {
     display: flex;
     justify-content: center;
 }
 
-#field__title{
+#field__title {
     font-size: 20px;
     font-weight: bold;
-    color: #333232;
+    color: var(--color-blackgray);
     margin-top: 20px;
     margin-bottom: 5%;
 }
 
-.pink-font{
-    color: #ee179f;
-}
-
-.blue-google{
+.blue-google {
     color: #0077ff;
 }
 
-.red-google{
+.red-google {
     color: #cc1010;
 }
 
-#yellow-google{
+#yellow-google {
     color: #f7df06;
 }
 
-#green-google{
+#green-google {
     color: #00a008;
 }
 
-.fields__textboxs{
+.fields__textboxs {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100px;
 }
 
-.fields__textboxs > input{
+.fields__textboxs>input {
     height: 40px;
-    border: 1px solid #cecbcb;
+    border: 1px solid var(--color-gray);
     border-radius: 10px;
     margin-bottom: 5%;
+    padding-left: 20px;
 }
 
-.fields__remember{
+.fields__remember {
     margin-bottom: 20px;
 }
 
-#btnlogin{
+#btnlogin {
     width: 100%;
     border: none;
-    background-color: #ee179f;
-    color: #ffffff;
+    color: var(--color-white);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
-    cursor: pointer;
 }
 
-.fields__recovery > a, .fields__create > a{
+.fields__recovery>a,
+.fields__create>a {
     text-decoration: none;
-    color:#2b2a2a;
-    
+    color: var(--color-blackgray);
+
 }
 
 .fields__recovery {
@@ -113,50 +96,55 @@ body{
     margin-bottom: 20%;
 }
 
-.fields__create{
+.fields__create {
     display: flex;
     justify-content: center;
     font-size: 20px;
     font-weight: bold;
-} 
+    align-items: flex-end;
+    margin-top: 100px;
+}
 
-@media screen and (min-width:650px){
+@media screen and (min-width:650px) {
 
-    .container{
+    .container {
         margin-top: 10px;
     }
 
-    .fields__textboxs{
+    .fields__textboxs {
         height: 150px;
     }
 
-    .fields__textboxs > input{
+    .fields__textboxs>input {
         height: 60px;
     }
 
-    .fields__recovery{
+    .fields__recovery {
         margin-bottom: 20px;
     }
 }
 
-@media screen and (max-width:380px){
-    .logo > img{
+@media screen and (max-width:380px) {
+    .logo>img {
         height: 70px;
     }
 
-    .container{
+    .container {
         height: 75vh;
     }
 
+    .fields__create {
+        margin-top: 30px;
+    }
+
 }
 
-@media screen and (min-height:600px){
-    .logo{
+@media screen and (max-height:600px) {
+    .logo {
         margin-top: 25px;
     }
+
+    .fields__create {
+        margin-top: 30px;
+    }
 }
-
-
-
-
-

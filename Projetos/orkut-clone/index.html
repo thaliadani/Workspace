@@ -5,51 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/icon-orkut.png">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imgs/icon-orkut.png">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/login.css">
     <title>Orkut</title>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-                    <img src="img/logo-orkut.png" alt="Logo orkut">
-        </div>
-
+    
+    <header class="logo">    
+        <img src="imgs/logo-orkut.png" alt="Logo orkut">
     </header>
-    <main>
-        
-        <div class="container">
-            <div class="fields">
-                <div class="fields__title">
-                    <p id="field__title">Acesse o <span class="pink-font">orkut</span> com a sua conta do <span class="blue-google">G</span><span class="red-google">o</span><span id="yellow-google">o</span><span class="blue-google">g</span><span id="green-google">l</span><span class="red-google">e</span>!</p>
-                </div>
-                <div class="fields__textboxs">
-                    <input type="email" placeholder="E-mail ou número de celular" name="email" id="fields__email"
-                        aria-label="email">
-                    <input type="password" placeholder="Senha" name="password" id="fields__password"
-                        aria-label="password">
-                </div>
-                <div class="fields__remember">
-                    <input type="checkbox" name="checkbox" id="field__remember" aria-label="checkbox">
-                    <label for="field__remember">Lembrar sempre do meu acesso</label>
-                </div>
-                <div class="fields__buttons">
-                    <input id="btnlogin" type="button" name="button" value="Entrar">
-                </div>
-                <div class="fields__recovery">
-                    <a href="#">Esqueci minha senha ou e-mail</a>
-                </div>
-                <div class="fields__create">
-                    <a href="#">Não tem conta? <span class="pink-font">Criar agora</span></a>
-                </div>
+    
+    <main class="container">
 
+        <section class="fields">
+            
+            <div class="fields__title">
+                <p id="field__title">Acesse o <span class="orkut-font-color">orkut</span> com a sua conta do <span class="blue-google">G</span><span class="red-google">o</span><span id="yellow-google">o</span><span class="blue-google">g</span><span id="green-google">l</span><span class="red-google">e</span>!</p>
             </div>
-        </div>
-    </main>
-    <footer>
+            
+            <div class="fields__textboxs">
+                <input type="email" placeholder="E-mail ou número de celular" name="email" id="fields__email"
+                    aria-label="email">
+                <input type="password" placeholder="Senha" name="password" id="fields__password"
+                    aria-label="password">
+            </div>
+            
+            <div class="fields__remember">
+                <input type="checkbox" name="checkbox" id="field__remember" aria-label="checkbox">
+                <label for="field__remember">Lembrar sempre do meu acesso</label>
+            </div>
+            
+            <div class="fields__buttons">
+                <input id="btnlogin" class="orkut-button-bg" type="button" name="button" value="Entrar">
+            </div>
+            
+            <div class="fields__recovery">
+                <a href="#">Esqueci minha senha ou e-mail</a>
+            </div>
+            
+            <div class="fields__create">
+                <a href="#">Não tem conta? <span class="orkut-font-color">Criar agora</span></a>
+            </div>
 
-    </footer>
+        </section>
+        
+    </main>
 
 </body>
 
