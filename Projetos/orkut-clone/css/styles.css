@@ -150,6 +150,13 @@ body{
 
 }
 
+@media screen and (min-height:600px){
+    .logo{
+        margin-top: 25px;
+    }
+}
+
+
 
 
 
