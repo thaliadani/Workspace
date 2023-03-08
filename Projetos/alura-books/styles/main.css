@@ -272,6 +272,7 @@ body{
     border-radius: 24px;
     padding: 1em 2em;
     width: 85%;
+    color: var(--cor-azul);
 }
 
 .contato__email::placeholder{
@@ -280,7 +281,7 @@ body{
     font-weight: 400;
     font-size: 16px;
     background: url(../imgs/email.svg) no-repeat;
-    padding: 0em 2em;  
+    padding-left: 2em;  
 }
 
 .rodape{
