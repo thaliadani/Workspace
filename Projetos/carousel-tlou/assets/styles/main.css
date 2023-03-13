@@ -159,8 +159,8 @@ main:after{
 
     .menu-lateral{
         position: static;
-        min-height: auto;
-        width: 100%;
+        min-height: 100%;
+        width: auto;
         margin-top: 50px;
     }
 
