@@ -2,6 +2,8 @@
 
 :root{
     --cor-branco: #ffffff;
+    --cor-degrade: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+    --cor-selecionado: #1d8346;
 }
 
 body{
@@ -17,7 +19,7 @@ main:after{
     position: fixed;
     top:0;
     left: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.05926120448179273) 50%, rgba(0, 0, 0, 1) 90%);
+    background: var(--cor-degrade);
     z-index: -1;
 }
 
@@ -58,7 +60,7 @@ main:after{
 }
 
 .botoes-carrossel .botao.selecionado{
-    background-color: #1d8346;
+    background-color: var(--cor-selecionado);
 }
 
 .menu-lateral{
