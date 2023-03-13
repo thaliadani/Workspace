@@ -117,16 +117,11 @@ main:after{
     }
 }
 
-/* RESPONSIVIDADE */
-
-
 @media (max-width:1280px){
     body{
         padding: 0 40px;
     }
 }
-
-    /* TABLET */
 
 @media (max-width:768px){
     .informacoes {
@@ -140,8 +135,6 @@ main:after{
         text-align: center;
     }
 }
-
-    /* CELULAR */
 
     @media (max-width:425px){
 
