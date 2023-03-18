@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 2em 0;
+    padding: 2em 0;
+    width: 100%;
+}
+
+.container__tabela{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center; 
+    width: 50%;
+}
+
+.tabela{
+    margin: 1em 0;
+}
+
+.tabela-dados>th{
+    padding: 1em 1em;
+}
