@@ -22,6 +22,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
@@ -30,15 +31,15 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
   
 ### Screenshot
   
-![](https://user-images.githubusercontent.com/31187727/227015542-b3eed16d-4dd8-4229-b918-752b6ef89533.png)
+![image](https://user-images.githubusercontent.com/31187727/227028986-aaef0cae-c018-4b1a-b8e0-e1a1641b67b3.png)
   
-![image](https://user-images.githubusercontent.com/31187727/227020532-78b81b19-9746-4a06-a483-dfe90e27e7b5.png)
-  
+![image](https://user-images.githubusercontent.com/31187727/227028918-d45489bc-159e-4291-9536-a52095cec1f6.png)
+
 </div>
 
 ### Links
 
-- [Live Site URL](https://www.frontendmentor.io/profile/thaliadani)
+- [Live Site URL](https://qr-code-component-main-zfvk.vercel.app/)
 - [Solution URL](https://www.frontendmentor.io/profile/thaliadani/solutions)
 
 ## My process
@@ -49,6 +50,10 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+
+### Useful resources
+
+- [Box shadow](https://cssgenerator.org/box-shadow-css-generator.html) - this helped me make a shadow on the container.
 
 ## Author
 
