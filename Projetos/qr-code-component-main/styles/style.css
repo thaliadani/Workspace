@@ -42,6 +42,10 @@ body {
     margin: 2em 0;
     padding: 2em;
     border-radius: 1em;
+
+    box-shadow: 10px 10px 29px 1px rgba(0,0,0,0.26);
+    -webkit-box-shadow: 10px 10px 29px 1px rgba(0,0,0,0.26);
+    -moz-box-shadow: 10px 10px 29px 1px rgba(0,0,0,0.26);
 }
 
 .container__image {
