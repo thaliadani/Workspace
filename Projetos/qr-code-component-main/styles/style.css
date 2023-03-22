@@ -73,13 +73,24 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
+@media screen and (min-height: 1024px) {
+    .container__text {
+        font-size: 24px;
+    }
+
+    .text-paragraph {
+        font-size: 20px;
+    }
+    
+}
+
 @media screen and (min-width: 1024px) {
     .container {
         width: 30%;
     }
 
     .container__text {
-        font-size: 25px;
+        font-size: 24px;
     }
 
     .text-paragraph {
