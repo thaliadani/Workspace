@@ -16,9 +16,6 @@
 
 <div>
 
-
-
-
 <div>
 
 <h2>Alura Books</h2>
