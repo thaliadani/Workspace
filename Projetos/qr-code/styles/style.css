@@ -34,8 +34,8 @@ body {
     width: 90%;
     max-width: 400px;
     margin-bottom: 3em;
-    padding: 2em;
-    border-radius: 1em;
+    padding: 1em;
+    border-radius: 1.5em;
 
     box-shadow: 10px 10px 29px 1px rgba(0,0,0,0.26);
     -webkit-box-shadow: 10px 10px 29px 1px rgba(0,0,0,0.26);
@@ -44,7 +44,7 @@ body {
 
 .container__image {
     width: 100%;
-    border-radius: 0.5em;
+    border-radius: 1em;
 }
 
 .container__text {
