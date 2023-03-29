@@ -25,7 +25,7 @@ body {
     align-items: center;
     text-align: center;
 
-    margin-top: 5em;
+    min-height: 100vh;
 }
 
 .container {
