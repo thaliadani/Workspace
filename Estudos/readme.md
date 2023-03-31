@@ -3,15 +3,13 @@
 <div>
 
 <ul>
-  <li>GIT e GITHUB</li>
-    <ul>
-      <li>Anotações</li>
-      <li>Livro de Receita</li>
-    </ul>
   <li>HTML e CSS</li>
     <ul>
       <li>Anotações</li>
-      <li>Portfolio</li>
+      <li>Formulário</li>
+      <li>Lista Suspensa</li>
+      <li>SASS</li>
+      <li>Tabela</li>
     </ul>
   <li>JAVA</li>
     <ul>

@@ -1,7 +1,5 @@
 # Ambiente de Desenvolvimento Java
 
-### [Link da aula](https://web.dio.me/course/ambiente-de-desenvolvimento-java/learning/21a69c4a-f23d-47b8-982b-582eba75d4f5?back=/track/potencia-tech-powered-ifood-java-beginners&tab=undefined&moduleId=undefined "Ambiente de Desenvolvimento Java")
-
 ## Instalações
 
 - ### [JDK (Essencial)](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html "JDK")
@@ -13,7 +11,6 @@
 
 # Aprendendo a Sintaxe Java
 
-### [Link da aula](https://web.dio.me/course/aprendendo-a-sintaxe-java/learning/564ed099-1bee-4481-9c2f-cd9b427b6331?back=/track/potencia-tech-powered-ifood-java-beginners&tab=path&moduleId=undefined "Aprendendo a Sintaxe Java")
  
  - ### Todas as classes começarão com letra maiúscula e a palavra complementar também
  
@@ -1264,8 +1261,6 @@
 
 ## Operadores Relacionais
 
-### [Link da Aula](https://web.dio.me/course/logica-condicional-e-controle-de-fluxos-em-java/learning/1b4108ec-ccd1-4a2d-905d-b78a83711f6c?back=/track/potencia-tech-powered-ifood-java-beginners&tab=undefined&moduleId=undefined)
-
 ### "São símbolos especiais quais são capazes de realizar comparações entre determinados operandos e, em seguida, retornar um resultado"
 
 ### Tipos:
@@ -1276,8 +1271,6 @@
 
 ## Operadores Lógicos
  
-### [Link da Aula](https://web.dio.me/course/logica-condicional-e-controle-de-fluxos-em-java/learning/8b2bf4b8-22a4-4885-a12a-a75d22fd876e?back=/track/potencia-tech-powered-ifood-java-beginners&tab=undefined&moduleId=undefined)
-
 ### "São símbolos especiais quais são capazes de realizar comparações lógicas entre operandos lógicos ou expressões e, em seguida,retornar um resultado"
 
 ### Tipos:
@@ -1374,8 +1367,6 @@
 
 ## Controle de Fluxos em Java
 
-### [Link da Aula](https://web.dio.me/course/logica-condicional-e-controle-de-fluxos-em-java/learning/285dc72b-5424-4bd5-8893-3a1402daaf5b?back=/track/potencia-tech-powered-ifood-java-beginners&tab=path&moduleId=undefined)
-
 ### São estruturas que tem a capacidade de direcionar o fluxo de execução do código.
 
 ### Tipos:
@@ -1433,5 +1424,3 @@
 - ### Evitar muitos if's aninhados.
 
 - ### Usar a boa prática da aula 2 para diminuir o tamanho if.
-
-## Blocos
