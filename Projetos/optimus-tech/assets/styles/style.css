@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+:root{
+    --cor-branco: #ffffff;
+    --cor-cinza-escuro:#3A404E;
+    --cor-cinza-claro:#667085;
+    --cor-vermelho:#8E2424;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 1.5em; 
+}
+
+.menu__logo{
+    display: flex;
+    align-items: center;
+    gap: .8em;
+    color: var(--cor-cinza-escuro);
+}
+
+.menu__itens{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    list-style: none;
+    color: var(--cor-cinza-claro);
+}
+
+.menu__links a{
+    text-decoration: none; 
+}
+
+.link-entrar{
+    color: var(--cor-cinza-claro);
+    padding-right: 1.5em;
+}
+
+.link-cadastrar{
+    background-color: var(--cor-vermelho);
+    border: solid .8em var(--cor-vermelho);
+    color: var(--cor-branco);
+    border-radius: .5em;
+}
+

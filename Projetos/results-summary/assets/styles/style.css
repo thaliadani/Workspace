@@ -33,6 +33,12 @@
     --color-dark-gray-blue: hsl(224, 30%, 27%);  
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .container__result{
     display: flex;
     flex-direction: column;
@@ -175,15 +181,13 @@
 @media (min-width:1440px){
     
     .container{
-        display: flex;
-        justify-content: center;
+        flex-direction: row;
         align-items: center;
-        
-        min-height: 100vh;
+        min-height: 100vh;   
     }
 
     .container__result{
-        width: 24%;
+        width: 20%;
         padding-bottom: 0;
         border-top-left-radius: 2rem;
         border-top-right-radius: 2rem;
