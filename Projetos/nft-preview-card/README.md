@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL](https://results-summary-weld.vercel.app/)
+- [Live Site URL](https://nft-preview-card-two-wine.vercel.app/)a
 - [Solution URL](https://www.frontendmentor.io/profile/thaliadani/solutions)
 
 ## My process
