@@ -10,6 +10,7 @@
     --color-white: hsl(0, 0%, 100%); 
     --color-soft-blue: hsl(215, 51%, 70%);
     --color-cyan: hsl(178, 100%, 50%);
+    --color-cyan-trasparent: rgba(0, 255, 247, 0.473);
 
     --bg-very-dark-blue-body: hsl(217, 54%, 11%);
     --bg-very-dark-blue-card: hsl(216, 50%, 16%);
@@ -37,16 +38,41 @@ body{
     padding:1.5em;
 }
 
-.container__image{
+.container__image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+  
+.container__image1 {
     width: 100%;
     border-radius: 0.5em;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
-
-.container__image:hover{
-   background-color: var(--color-cyan);
-   cursor: pointer;    
+  
+.container__image2 {
+    width: 100%;
+    border-radius: 0.5em;
+    
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
 }
-
+  
+.container__image:hover .container__image2 {
+    background-color: var(--color-cyan-trasparent);
+    opacity: 1;
+    z-index: 2;
+}
+  
 .container__name{
     color: var(--color-white);
     font-size: 25px;

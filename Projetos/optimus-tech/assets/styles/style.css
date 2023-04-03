@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600&display=swap');
 
 *{
     margin: 0;
@@ -8,50 +8,168 @@
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 16px;
+    color: var(--cor-azul-escuro);
 }
 
 :root{
     --cor-branco: #ffffff;
-    --cor-cinza-escuro:#3A404E;
+    --cor-azul-escuro:#101828;
     --cor-cinza-claro:#667085;
     --cor-vermelho:#8E2424;
+    --fundo-vermelho-trasparente: #C3191908;
+    --cor-borda-cinza:#EAECF0; 
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
 }
 
 .menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    padding-top: 1.5em; 
+    padding: 1rem 0;
 }
 
-.menu__logo{
-    display: flex;
-    align-items: center;
-    gap: .8em;
-    color: var(--cor-cinza-escuro);
-}
-
-.menu__itens{
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    list-style: none;
+.menu .links a{
+    justify-content: start;
     color: var(--cor-cinza-claro);
+    text-decoration: none;
+    margin-right: 2rem;
 }
 
-.menu__links a{
-    text-decoration: none; 
+.botoes button{
+    color:var(--cor-cinza-claro);
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    border-radius: 0.5rem;
 }
 
-.link-entrar{
-    color: var(--cor-cinza-claro);
-    padding-right: 1.5em;
-}
-
-.link-cadastrar{
+.botoes #cadastrar{
     background-color: var(--cor-vermelho);
-    border: solid .8em var(--cor-vermelho);
-    color: var(--cor-branco);
-    border-radius: .5em;
+    color:var(--cor-branco)
 }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container__sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 4em;
+}
+
+.container__sobre> .texto{
+    color: var(--cor-vermelho);
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+.container__sobre> .titulo{
+    font-size: 48px;
+    font-weight: 600;
+    padding-bottom: 2rem;
+}
+
+.paragrafo{
+    color: var(--cor-cinza-claro);
+    font-size: 20px;
+    font-weight: 400;
+    width: 53%;
+}
+
+.container__info{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   gap: 2em;
+}
+
+.info-texto h2{
+    color: var(--cor-vermelho);
+    font-size: 60px;
+    font-weight: 600;
+    padding: 2em 0 0.3em 0;
+}
+.info-texto h3{
+    font-size: 18px;
+}
+
+.info-texto p{
+    color: var(--cor-cinza-claro);
+    font-weight: 400;
+    padding-top: 1em;
+    max-width: 17em;
+}
+
+.container__vagas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__vagas> h3{
+    color: var(--cor-vermelho);
+    background-color: var(--fundo-vermelho-trasparente);
+    border-radius: 1em;
+    padding: 0.5em;
+    margin: 16em 0 1em 0;
+    font-size: 14px;
+}
+
+.container__vagas> h2{
+    font-size: 36px;
+    font-weight: 600;
+    padding: 0.2em 0 0.5em 0;
+}
+
+.container__vagas> p{
+    padding-bottom: 3em;
+}
+
+.container__areas{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 35%;
+}
+
+.container__areas> h2{
+    font-size: 20px;
+    padding-top: 3em;
+}
+
+.areas-emprego{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 0.1em var(--cor-borda-cinza);
+    border-radius: 1em;
+    padding: 1.5em;
+}
+
+.areas-emprego> h3{
+    font-size: 18px;
+    padding-bottom: 1.5em;
+}
+
+.emprego-salario{
+    display: flex;
+    gap: 2em;
+}
+
+.emprego-salario> p{
+    color: var(--cor-cinza-claro);
+}
