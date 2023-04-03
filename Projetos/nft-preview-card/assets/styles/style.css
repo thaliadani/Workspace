@@ -120,8 +120,7 @@ body{
 .container__profile{
     display: flex;
     align-items: center;
-    padding: 1em 0;
-    gap: 1em;
+    padding-top: 1em;
     border-top: solid 0.1em var(--line-very-dark-blue);
 }
 
@@ -163,6 +162,6 @@ body{
     }
 
     .container{
-        width: 20%;
+        max-width: 25%;
     }
 }
