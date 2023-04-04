@@ -113,14 +113,14 @@ body{
     max-width: 17em;
 }
 
-.container__vagas{
+.container__equipe{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container__vagas> h3{
+.container__equipe> h3{
     color: var(--cor-vermelho);
     background-color: var(--fundo-vermelho-trasparente);
     border-radius: 1em;
@@ -129,29 +129,29 @@ body{
     font-size: 14px;
 }
 
-.container__vagas> h2{
+.container__equipe> h2{
     font-size: 36px;
     font-weight: 600;
     padding: 0.2em 0 0.5em 0;
 }
 
-.container__vagas> p{
+.container__equipe> p{
     padding-bottom: 3em;
 }
 
-.container__areas{
+.container__vagas{
     display: flex;
     flex-direction: column;
     gap: 1.5em;
     width: 35%;
 }
 
-.container__areas> h2{
+.container__vagas> h2{
     font-size: 20px;
     padding-top: 3em;
 }
 
-.areas-emprego{
+.vagas-area{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,16 +160,16 @@ body{
     padding: 1.5em;
 }
 
-.areas-emprego> h3{
+.vagas-area> h3{
     font-size: 18px;
     padding-bottom: 1.5em;
 }
 
-.emprego-salario{
+.area-salario{
     display: flex;
     gap: 2em;
 }
 
-.emprego-salario> p{
+.area-salario> p{
     color: var(--cor-cinza-claro);
 }
