@@ -14,10 +14,14 @@
 :root{
     --cor-branco: #ffffff;
     --cor-azul-escuro:#101828;
-    --cor-cinza-claro:#667085;
+    --cor-cinza:#98A2B3;
+    --cor-cinza-escuro:#667085;
+    --cor-cinza-claro:#F9FAFB;
     --cor-vermelho:#8E2424;
+
     --fundo-vermelho-trasparente: #C3191908;
-    --cor-borda-cinza:#EAECF0; 
+    --borda-cinza-claro:#EAECF0; 
+    --borda-cinza: #D0D5DD;
 }
 
 body{
@@ -34,13 +38,13 @@ body{
 
 .menu .links a{
     justify-content: start;
-    color: var(--cor-cinza-claro);
+    color: var(--cor-cinza-escuro);
     text-decoration: none;
     margin-right: 2rem;
 }
 
 .botoes button{
-    color:var(--cor-cinza-claro);
+    color:var(--cor-cinza-escuro);
     padding: 0.8rem 1rem;
     cursor: pointer;
     background: none;
@@ -83,7 +87,7 @@ body{
 }
 
 .paragrafo{
-    color: var(--cor-cinza-claro);
+    color: var(--cor-cinza-escuro);
     font-size: 20px;
     font-weight: 400;
     width: 53%;
@@ -94,20 +98,21 @@ body{
    justify-content: space-around;
    align-items: center;
    gap: 2em;
+   padding-top: 6em;
 }
 
-.info-texto h2{
+.info-texto span{
     color: var(--cor-vermelho);
     font-size: 60px;
     font-weight: 600;
-    padding: 2em 0 0.3em 0;
+    
 }
 .info-texto h3{
     font-size: 18px;
 }
 
 .info-texto p{
-    color: var(--cor-cinza-claro);
+    color: var(--cor-cinza-escuro);
     font-weight: 400;
     padding-top: 1em;
     max-width: 17em;
@@ -120,7 +125,7 @@ body{
     align-items: center;
 }
 
-.container__equipe> h3{
+.container__equipe> span{
     color: var(--cor-vermelho);
     background-color: var(--fundo-vermelho-trasparente);
     border-radius: 1em;
@@ -155,7 +160,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: solid 0.1em var(--cor-borda-cinza);
+    border: solid 0.1em var(--borda-cinza-claro);
     border-radius: 1em;
     padding: 1.5em;
 }
@@ -171,5 +176,109 @@ body{
 }
 
 .area-salario> p{
-    color: var(--cor-cinza-claro);
+    color: var(--cor-cinza-escuro);
+}
+
+.container__colaboradores{
+    background-color: var(--fundo-vermelho-trasparente);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3em;
+    border-radius: 1em;
+    width: 68%;
+    margin: 6em;
+}
+
+.container__colaboradores>span{
+    color: var(--cor-vermelho);
+    font-size: 14px;
+    font-weight: 600;
+    padding-bottom: 1.5em;
+}
+
+.container__colaboradores>h2{
+    color: var(--cor-azul-escuro);
+    font-size: 36px;
+    padding-bottom: 1em;
+}
+
+.colaboradores-avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.colaboradores-avatar>img{
+    width: 56px;
+    padding-bottom: 1em;
+}
+
+.colaboradores-avatar> .nome{
+    color: var(--cor-azul-escuro);
+    padding-bottom: 0.5em;
+}
+
+.colaboradores-avatar> .profisao{
+    color: var(--cor-cinza-escuro);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.container__acompanhe{
+    background-color: var(--cor-cinza-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.container__acompanhe> h2{
+    color: var(--cor-azul-escuro);
+    font-size: 36px;
+    font-weight: 600;
+    padding: 3em 0 0.5em 0;
+}
+
+.container__acompanhe> p{
+    color: var(--cor-cinza-escuro);
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 1.5em;
+}
+
+.container__acompanhe> .acompanhe-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.acompanhe-formulario> #email{
+    border: solid 0.1em var(--borda-cinza);
+    border-radius: 0.5em; 
+    color: var(--cor-cinza);
+    font-weight: 400;
+    width: 360px;
+    margin-right: 1em;
+    padding: 1em;
+}
+
+.acompanhe-formulario> button{
+    background-color: var(--cor-vermelho);
+    border: solid 1em var(--cor-vermelho);
+    border-radius: 0.5em;
+    color: var(--cor-branco);
+    cursor: pointer;
+}
+
+.container__acompanhe> span{
+    color: var(--cor-cinza);
+    font-weight: 400;
+    padding: 2em 0 5em 0;
 }
