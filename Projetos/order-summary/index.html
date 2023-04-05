@@ -10,29 +10,42 @@
 </head>
 
 <body>
+
+  <img class="image-mobile" src="./assets/images/pattern-background-mobile.svg" alt="">
+  <img class="image-desktop" src="./assets/images/pattern-background-desktop.svg" alt="">
+
   <main class="container">
-    <img class="container__image" src="./assets/images/illustration-hero.svg"
-      alt="A girl listening to a song and dancing">
+    
+    <img src="./assets/images/illustration-hero.svg" alt="A girl listening to a song and dancing">
+    
+    <section class="container__card">
 
-    <h1 class="container__title">Order Summary</h1>
-    <p class="container__text">You can now listen to millions of songs, audiobooks, and podcasts on any
-      device anywhere you like!</p>
+      <h1>Order Summary</h1>
+      <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
 
-    <section class="container__plan">
-      <img class="plan-image" src="./assets/images/icon-music.svg" alt="Icon music">
-      <p class="plan-text"><span>Annual Plan</span>$59.99/year</p>
-      <a class="plan-link" href="#">Change</a>
+      <div class="card__plan">
+        <img src="./assets/images/icon-music.svg" alt="Icon music">
+
+        <div class="plan-text">
+          <span>Annual Plan</span>
+          <span>$59.99/year</span>
+        </div>
+
+        <a href="#">Change</a>
+
+      </div>
+
+      <button id="button-payment">Proceed to Payment</button>
+      <button id="button-cancel"> Cancel Order</button>
     </section>
-
-    <button class="button-payment">Proceed to Payment</button>
-    <button class="button-cancel"> Cancel Order</button>
-
   </main>
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/thaliadani">Thalia Danielle</a>.
   </footer>
+
 </body>
 
 </html>

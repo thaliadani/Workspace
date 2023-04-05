@@ -1,0 +1,22 @@
+@import '../abstract/variables';
+
+.container {
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background: $color-white;
+    margin: 5em 1.5em; 
+    border-radius: 1.1em;
+    max-width: 375px;
+    img {
+        width: 100%;
+        border-top-left-radius: 1em;
+        border-top-right-radius: 1em;
+    }
+    
+}

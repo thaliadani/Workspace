@@ -1,7 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: hsl(225, 100%, 94%);
+}
+body .image-desktop {
+  display: none;
+}
+body img {
+  position: relative;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: hsl(0, 0%, 100%);
+  margin: 5em 1.5em;
+  border-radius: 1.1em;
+  max-width: 375px;
+}
+.container img {
+  width: 100%;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.container__card {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+.container__card h1 {
+  color: hsl(223, 47%, 23%);
+  font-size: 23px;
+  font-weight: 900;
+  padding-bottom: 0.8em;
+}
+.container__card p {
+  color: hsl(224, 23%, 55%);
+  padding-bottom: 1.5em;
+  font-weight: 500;
+  line-height: 1.5em;
+}
+.container__card .card__plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(225, 100%, 98%);
+  border-radius: 1em;
+  padding: 0.5em 1em;
+}
+.container__card .card__plan img {
+  width: 20%;
+}
+.container__card .card__plan .plan-text {
+  display: flex;
+  flex-direction: column;
+}
+.container__card .card__plan .plan-text span:nth-child(1) {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+.container__card .card__plan .plan-text span {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+.container__card .card__plan a {
+  color: hsl(245, 75%, 52%);
+  font-size: 14px;
+}
+.container__card .card__plan a:hover {
+  color: hsl(245, 90%, 69%);
+  text-decoration: none;
+}
+.container__card #button-payment {
+  background-color: hsl(245, 75%, 52%);
+  border: solid 0.5em hsl(245, 75%, 52%);
+  border-radius: 0.5em;
+  color: hsl(0, 0%, 100%);
+  padding: 0.5em;
+  margin: 2em 0 1em 0;
+  cursor: pointer;
+  box-shadow: 0px 23px 36px -10px rgba(56, 41, 224, 0.36);
+  -webkit-box-shadow: 0px 23px 36px -10px rgba(56, 41, 224, 0.36);
+  -moz-box-shadow: 0px 23px 36px -10px rgba(56, 41, 224, 0.36);
+}
+.container__card #button-payment:hover {
+  background-color: hsl(245, 90%, 69%);
+  border: solid 0.5em hsl(245, 90%, 69%);
+}
+.container__card #button-cancel {
+  background: none;
+  border: none;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+}
+.container__card #button-cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
 .attribution {
+  position: absolute;
+  bottom: 10%;
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
+  font-size: 11px;
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  body .image-mobile {
+    display: none;
+  }
+  body .image-desktop {
+    display: inline-block;
+  }
 }/*# sourceMappingURL=style.css.map */

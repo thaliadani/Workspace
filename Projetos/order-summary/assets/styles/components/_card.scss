@@ -1,0 +1,78 @@
+@import '../abstract/variables';
+
+.container__card {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    h1 {
+        color: $color-dark-blue;
+        font-size: 23px;
+        font-weight: 900;
+        padding-bottom: 0.8em;
+    }
+
+    p {
+        color: $color-desaturated-blue;
+        padding-bottom: 1.5em;
+        font-weight: 500;
+        line-height: 1.5em;
+    }
+
+    .card__plan {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $color-very-pale-blue;
+        border-radius: 1em;
+        padding: 0.5em 1em;
+        img {
+            width: 20%;
+        }
+        .plan-text {
+            display: flex;
+            flex-direction: column;
+            span:nth-child(1) {
+                color: $color-dark-blue;
+                font-weight: 700;
+            }
+            span {
+                color: $color-desaturated-blue;
+                font-weight: 500;
+            }
+        }
+        a {
+            color: $color-bright-blue;
+            font-size: 14px;
+        }
+        a:hover{
+            color: $color-lilac;
+            text-decoration: none;
+        }
+    }
+    #button-payment{
+        background-color: $color-bright-blue;
+        border: solid 0.5em $color-bright-blue;
+        border-radius: 0.5em;
+        color: $color-white;
+        padding: 0.5em;
+        margin: 2em 0 1em 0;
+        cursor: pointer;
+        
+        box-shadow: $shadow;
+        -webkit-box-shadow: $shadow;
+        -moz-box-shadow: $shadow;
+    }
+    #button-payment:hover{
+        background-color: $color-lilac;
+        border: solid 0.5em $color-lilac;
+    }
+    #button-cancel{
+        background: none;
+        border: none;
+        color: $color-desaturated-blue;
+        cursor: pointer;
+    }
+    #button-cancel:hover{
+        color: $color-dark-blue;
+    }
+}

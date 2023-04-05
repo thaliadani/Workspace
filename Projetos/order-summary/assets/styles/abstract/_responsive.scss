@@ -1,0 +1,10 @@
+@media (min-width: 1440px){
+    body{
+        .image-mobile{
+            display: none;
+        }
+        .image-desktop{
+            display: inline-block;
+        }
+    }
+}
