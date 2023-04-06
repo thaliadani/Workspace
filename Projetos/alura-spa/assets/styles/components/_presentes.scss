@@ -1,0 +1,32 @@
+@import '../abstract/variaveis';
+
+#presentes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 3em;
+    .imagem{
+        margin-right: 2em;
+        img{
+           max-width: 60%; 
+        }
+    }
+    .texto{
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        h3{
+            
+            font-size: $tamanho-do-texto / 1.5;
+        }
+        h4{
+            color: $cor-primaria;
+            font-size: $tamanho-do-texto /2;
+        }
+        p{
+            font-size: $tamanho-do-texto /3;
+        }
+    }
+}
