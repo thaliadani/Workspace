@@ -43,11 +43,12 @@
         a {
             color: $color-bright-blue;
             font-size: 14px;
-        }
-        a:hover{
+            &:hover{
             color: $color-lilac;
             text-decoration: none;
+            }
         }
+        
     }
     #button-payment{
         background-color: $color-bright-blue;
@@ -61,18 +62,20 @@
         box-shadow: $shadow;
         -webkit-box-shadow: $shadow;
         -moz-box-shadow: $shadow;
-    }
-    #button-payment:hover{
+        &:hover{
         background-color: $color-lilac;
-        border: solid 0.5em $color-lilac;
+        border-color: $color-lilac;
+        }
     }
+    
     #button-cancel{
         background: none;
         border: none;
         color: $color-desaturated-blue;
         cursor: pointer;
-    }
-    #button-cancel:hover{
+        &:hover{
         color: $color-dark-blue;
+        }
     }
+    
 }

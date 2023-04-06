@@ -103,7 +103,7 @@ body img {
 }
 .container__card #button-payment:hover {
   background-color: hsl(245, 90%, 69%);
-  border: solid 0.5em hsl(245, 90%, 69%);
+  border-color: hsl(245, 90%, 69%);
 }
 .container__card #button-cancel {
   background: none;
@@ -117,7 +117,7 @@ body img {
 
 .attribution {
   position: absolute;
-  bottom: 10%;
+  bottom: 0;
   font-size: 11px;
   text-align: center;
 }
