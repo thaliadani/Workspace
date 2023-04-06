@@ -1,7 +1,7 @@
 @import '../abstract/variaveis';
 
 #cupom{
-    background-color: $cor-terciaria;
+    background-color: $cor-primaria;
     padding: 4rem;
     text-align: center;
     .texto{
@@ -47,9 +47,9 @@
         border: solid 2px $cor-terciaria;
         border-radius: 40px;
         &:hover{
-            background-color: $cor-primaria;
-            color: $cor-secundaria;
-            border-color: $cor-secundaria;
+            background-color: $cor-secundaria;
+            color: $cor-terciaria;
+            border-color: $cor-terciaria;
         }
     }
 }

@@ -13,10 +13,10 @@ nav ul li a {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
-  color: #FFD56F;
+  color: #4F200D;
 }
 nav ul li a:hover {
-  border-bottom: 2px solid #939B62;
+  border-bottom: 2px solid #FF8400;
 }
 
 .banner {
@@ -30,17 +30,17 @@ nav ul li a:hover {
 }
 .banner .inner-banner {
   padding: 3rem;
-  background-color: #939B62;
+  background-color: #FF8400;
   opacity: 0.9;
   border-radius: 45px;
 }
 .banner .inner-banner h1 {
   font-size: 3rem;
-  color: #FFD56F;
+  color: #4F200D;
 }
 .banner .inner-banner h2 {
   font-size: 1.5rem;
-  color: #FFB26B;
+  color: #FFD93D;
 }
 
 #servicos {
@@ -48,7 +48,7 @@ nav ul li a:hover {
 }
 #servicos h3 {
   font-size: 1.2rem;
-  color: #939B62;
+  color: #FF8400;
   text-transform: uppercase;
   font-weight: 300;
   text-align: center;
@@ -73,29 +73,29 @@ nav ul li a:hover {
   font-weight: 300;
   margin-top: 25px;
   margin-bottom: 20px;
-  color: #FFD56F;
+  color: #4F200D;
 }
 #servicos .cards .card p {
   font-size: 1rem;
   font-weight: 300;
-  color: #939B62;
+  color: #FF8400;
   line-height: 1.25rem;
 }
 #servicos .cards .card .img-container {
   padding-bottom: 2px;
-  border-bottom: 6px solid #939B62;
+  border-bottom: 6px solid #FF8400;
 }
 #servicos .cards .card .img-container img {
   max-width: 100%;
 }
 
 #cupom {
-  background-color: #FFB26B;
+  background-color: #4F200D;
   padding: 4rem;
   text-align: center;
 }
 #cupom .texto {
-  color: #939B62;
+  color: #FF8400;
 }
 #cupom .texto h2 {
   margin: 2rem;
@@ -118,7 +118,7 @@ nav ul li a:hover {
   font-size: 26px;
 }
 #cupom .input:hover, #cupom .input:focus-within {
-  box-shadow: 1px 1px 8px 1px #939B62;
+  box-shadow: 1px 1px 8px 1px #FF8400;
 }
 #cupom button {
   text-transform: uppercase;
@@ -127,19 +127,19 @@ nav ul li a:hover {
   height: 40px;
   text-align: center;
   width: 130px;
-  background-color: #939B62;
-  color: #FFD56F;
+  background-color: #FF8400;
+  color: #4F200D;
   letter-spacing: 1px;
   font-size: 12px;
   font-weight: bold;
   cursor: pointer;
-  border: solid 2px #FFB26B;
+  border: solid 2px #FFD93D;
   border-radius: 40px;
 }
 #cupom button:hover {
-  background-color: #FFD56F;
-  color: #939B62;
-  border-color: #939B62;
+  background-color: #FF8400;
+  color: #FFD93D;
+  border-color: #FFD93D;
 }
 
 #presentes {
@@ -165,7 +165,7 @@ nav ul li a:hover {
   font-size: 2rem;
 }
 #presentes .texto h4 {
-  color: #FFD56F;
+  color: #4F200D;
   font-size: 1.5rem;
 }
 #presentes .texto p {
@@ -175,10 +175,10 @@ nav ul li a:hover {
 footer {
   text-align: center;
   font-size: 1.5rem;
-  border-top: 2px solid #FFD56F;
+  border-top: 2px solid #4F200D;
   margin-top: 1rem;
   padding: 1.2rem;
-  background: linear-gradient(to left, #FFD56F, #939B62, #FFB26B, #FFD56F);
+  background: linear-gradient(to left, #4F200D, #FF8400, #FFD93D, #4F200D);
 }
 footer i {
   color: red;
