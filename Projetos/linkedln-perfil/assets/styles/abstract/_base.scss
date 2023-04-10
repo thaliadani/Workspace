@@ -1,0 +1,28 @@
+@import '../abstract/variaveis';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: $fonte;
+    font-size: $tamanho-da-fonte;
+    font-weight: $peso-da-fonte;
+    color: $cor-texto-primario;
+}
+
+body{
+    background-color: $fundo-body;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+

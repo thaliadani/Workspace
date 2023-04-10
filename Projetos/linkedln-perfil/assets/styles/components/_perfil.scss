@@ -1,0 +1,59 @@
+@import '../abstract/variaveis';
+
+.perfil{
+    background-color: $fundo-card;
+    margin: 2em;
+    border-radius: 1em;
+    display: grid;
+    
+    .capa{ 
+        width: 100%;
+    }
+    .foto{
+      
+    }
+    .informacoes{
+        display: flex;
+        flex-direction: column;
+        gap: .3em;
+        padding: 2em;
+        h1{
+            font-size: $tamanho-da-fonte + 8;
+            font-weight: $peso-da-fonte + 200;
+        }
+        h2{
+            font-size: $tamanho-da-fonte;
+            font-weight: $peso-da-fonte + 200;
+        }
+        span{
+            font-size: $tamanho-da-fonte - 2;
+            color: $cor-texto-secundario;
+        }
+        .destaque{
+            color: $cor-destaque;
+        }
+        .botoes{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            gap: .5em;
+            button{
+                border: 0.1em solid $cor-destaque;
+                background-color: $cor-destaque;
+                color: $fundo-card;
+                font-size: $tamanho-da-fonte - 2;
+                font-weight: $peso-da-fonte + 100;
+                border-radius: 1em;
+                padding: .4em;
+                width:128px;
+                &:nth-child(2){
+                    background-color: $fundo-card;
+                    color: $cor-destaque;
+                }
+            }  
+        }
+       
+        
+    }
+    
+}

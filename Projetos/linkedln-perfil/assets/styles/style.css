@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+body {
+  background-color: #000000;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1B2226;
+  padding: 0.5em;
+}
+.navbar .logo-pesquisa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .logo-pesquisa img {
+  padding-right: 0.5em;
+}
+.navbar .logo-pesquisa input {
+  background-color: #38434F;
+  border: solid 0.5em #38434F;
+  border-radius: 0.3em;
+  background-image: url(/assets/images/navbar/icone-busca.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 24px;
+  padding-left: 2em;
+}
+.navbar .logo-pesquisa input::-moz-placeholder {
+  color: #ffffff;
+  font-size: 14px;
+}
+.navbar .logo-pesquisa input::placeholder {
+  color: #ffffff;
+  font-size: 14px;
+}
+.navbar .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+  gap: 2em;
+}
+.navbar .menu li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.navbar .menu li:nth-child(5) {
+  border-right: 0.1em solid #ffffff;
+  padding-right: 0.5em;
+}
+.navbar .menu li img {
+  width: 24px;
+}
+.navbar .menu li span {
+  font-size: 12px;
+}
+
+.perfil {
+  background-color: #1B2226;
+  margin: 2em;
+  border-radius: 1em;
+  display: grid;
+}
+.perfil .capa {
+  width: 100%;
+}
+.perfil .foto {
+  grid-template-columns: 1/2;
+  grid-template-rows: 1/2;
+}
+.perfil .informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  padding: 2em;
+}
+.perfil .informacoes h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.perfil .informacoes h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.perfil .informacoes span {
+  font-size: 14px;
+  color: #A4A7A8;
+}
+.perfil .informacoes .destaque {
+  color: #70B5F9;
+}
+.perfil .informacoes .botoes {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 0.5em;
+}
+.perfil .informacoes .botoes button {
+  border: 0.1em solid #70B5F9;
+  background-color: #70B5F9;
+  color: #1B2226;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 1em;
+  padding: 0.4em;
+  width: 128px;
+}
+.perfil .informacoes .botoes button:nth-child(2) {
+  background-color: #1B2226;
+  color: #70B5F9;
+}/*# sourceMappingURL=style.css.map */

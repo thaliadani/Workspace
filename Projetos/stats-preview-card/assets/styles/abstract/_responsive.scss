@@ -1,0 +1,33 @@
+// - Desktop: 1440px
+
+@media (min-width:1440px){
+    .card{
+        flex-direction: row-reverse;
+        text-align:left;
+        .image{
+            background-image: url(/assets/images/image-header-desktop.jpg);
+            width: 150%;
+            height: 464px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0.5rem;
+        }
+        .texts{
+            padding: 0 8em 0 5em;
+            h1, span:nth-child(1){
+                font-size: $font-size + 18;
+            }
+            p{
+                line-height: 1.7em;
+                
+            }
+            .stats{
+                display: flex;
+                gap: 4em;
+                padding-top: 5em;
+                span{
+                    font-size: $font-size + 10;
+                }
+            }
+        }
+    }
+}
