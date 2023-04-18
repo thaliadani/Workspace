@@ -10,6 +10,7 @@
       <li>Lista Suspensa</li>
       <li>SASS</li>
       <li>Tabela</li>
+      <li>Tailwind CSS</li>
     </ul>
   <li>JAVA</li>
     <ul>
@@ -21,6 +22,10 @@
       <li>Operadores Lógicos</li>
       <li>Operadores Relacionais</li>
       <li>Sistema Smart Tv</li>
+    </ul>
+     <li>JS</li>
+    <ul>
+      <li>Alura Fone</li>
     </ul>
 </ul>
 
