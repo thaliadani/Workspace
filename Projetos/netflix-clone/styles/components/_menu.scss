@@ -1,0 +1,44 @@
+@import "../abstracts/variaveis";
+
+.menu{
+    display: flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    font-size: $fonte-tamanho - 2;
+}
+
+.menu nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu img{
+    width: 100px;
+}
+
+.menu nav a{
+    color: $cor-terciaria;
+}
+
+.menu nav a:hover{
+    color: $cor-primaria;
+}
+
+.menu .pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu .pesquisa .perfil img{
+    width: 30px;
+    border-radius: 0.3rem; 
+}
+
+.menu .pesquisa .perfil i{
+    transform: rotate(90deg);
+    width: 20px;
+}

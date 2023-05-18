@@ -1,0 +1,52 @@
+@import "../abstracts/variaveis";
+
+.filme-principal {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 8rem;
+
+    .logo {
+        display: flex;
+        align-items: center;
+        color: $cor-quartenaria;
+        padding: 12rem 0.5rem 0.5rem;
+
+        img {
+            width: 30px;
+        }
+    }
+
+    .titulo {
+        width: 500px;
+    }
+
+    .descricao {
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        width: 500px;
+    }
+
+    .botao {
+        background-color: $cor-botoes;
+        border-radius: 0.1rem;
+        border: none;
+        color: $cor-primaria;
+        padding: 1rem 2rem;
+        margin-right: 1rem;
+        font-size: $fonte-tamanho;
+        font-weight: bold;
+        cursor: pointer;
+        transition: .3s ease all;
+
+        &:hover {
+            background-color: $cor-primaria;
+            color: $cor-secundaria;
+        }
+        
+        i {
+            margin-right: 8px;
+        }
+    }
+
+
+}

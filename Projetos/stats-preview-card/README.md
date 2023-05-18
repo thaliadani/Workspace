@@ -21,13 +21,23 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 
+<div align="center">
+
 ### Screenshot
 
+### Mobile
 
+![image](https://user-images.githubusercontent.com/31187727/231023548-e8b403dc-f1a1-4c32-8f8b-9033cb0cd85d.png)
+
+### Desktop
+
+![image](https://user-images.githubusercontent.com/31187727/231023588-a3de75de-216b-4ce2-8733-b887fba72787.png)
+
+</div>
 
 ### Links
 
-- [Live Site URL](https://order-summary-tan.vercel.app/)
+- [Live Site URL](https://stats-preview-card-rose-six.vercel.app/)
 - [Solution URL](https://www.frontendmentor.io/profile/thaliadani/solutions)
 
 ## My process
@@ -45,6 +55,7 @@ Users should be able to:
 .image{
   filter: opacity(0.4) drop-shadow(0 0 0 $card-image); 
 }
+```
 
 ## Author
 
