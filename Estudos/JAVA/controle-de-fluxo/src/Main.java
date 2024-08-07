@@ -3,12 +3,12 @@ public class Main {
 
         ifFlecha();
         ifSemFlecha();
-        ifFerias();
+        /*ifFerias();
         ifMenor();
 
         switchSemana();
         switchNumero();
-        switchFerias();
+        switchFerias();*/
 
     }
 
@@ -60,6 +60,8 @@ public class Main {
                                                 }else {
                                                     if (mes == 12) {
                                                         System.out.println("Dezembro");
+                                                    }
+                                                }
                                             }
                                         }
                                     }
@@ -67,16 +69,18 @@ public class Main {
                             }
                         }
                     }
-                }
-            }
-        }
+                }       
 
+            }   
+
+        }
     }
-}
+    private static void ifSemFlecha(){
 
-private static void ifSemFlecha(){
+        
+    }
 
-        }
+}    
 
 
 
