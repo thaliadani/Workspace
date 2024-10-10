@@ -24,8 +24,8 @@
                 <label class="exemplos-label" for="senha">Senha</label>
                 <input class="exemplos-input" type="password" name="senha" id="senha">
 
-                <label class="exemplos-label" for="numero">Número</label>
-                <input class="exemplos-input" type="number" name="numero" id="numero">
+                <label class="exemplos-label" for="numero">Idade</label>
+                <input class="exemplos-input" type="number" name="numero" id="numero" min="0" max="100" step="5">
 
                 <label class="exemplos-label" for="telefone">Telefone</label>
                 <input class="exemplos-input" type="tel" name="telefone" id="telefone">
@@ -47,10 +47,8 @@
 
                 <p>Checkboxes</p>
                 <div class="checkboxes">
-                    <input class="exemplos-input checkboxes-input" type="checkbox" name="checkbox" id="checkbox">
-                    <label class="exemplos-label checkboxes-label" for="checkbox1">Checkbox 1</label>
-                    <input class="exemplos-input checkboxes-input" type="checkbox" name="checkbox" id="checkbox">
-                    <label class="exemplos-label checkboxes-label" for="checkbox2">Checkbox 2</label>
+                    <input class="exemplos-input checkboxes-input" type="checkbox" name="checkbox" value="checkbox" id="checkbox">opção 1
+                    <input class="exemplos-input checkboxes-input" type="checkbox" name="checkbox" id="checkbox">opção 2
                 </div>    
                 <p>Selecionar</p>
                 <div class="selecionar">
@@ -60,6 +58,9 @@
                     <label class="exemplos-label selecionar-label" for="selecionar2">2</label>
                 </div>
 
+                <label class="exemplos-label" for="hidden">Hidden</label>
+                <input class="exemplos-input" type="hidden" name="hidden" id="hidden">
+
                 <label class="exemplos-label" for="pesquisar">Barra de Pesquisa</label>
                 <input class="exemplos-input" type="search" name="pesquisar" id="pesquisar">
 
@@ -67,7 +68,7 @@
                 <input class="exemplos-input" type="color" name="color" id="color">
 
                 <label class="exemplos-label" for="s-arquivo">Arquivo</label>
-                <input class="exemplos-input" type="file" name="arquivo" id="s-arquivo">
+                <input class="exemplos-input" type="file" name="arquivo" multiple id="s-arquivo">
 
                 <label class="exemplos-label" for="range">Range</label>
                 <input class="exemplos-input" type="range" name="range" id="range">
