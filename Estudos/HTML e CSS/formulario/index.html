@@ -46,17 +46,15 @@
                 <input class="exemplos-input" type="month" name="color" id="mes">
 
                 <p>Checkboxes</p>
-                <div class="checkboxes">
-                    <input class="exemplos-input checkboxes-input" type="checkbox" name="checkbox" value="checkbox" id="checkbox">opção 1
-                    <input class="exemplos-input checkboxes-input" type="checkbox" name="checkbox" id="checkbox">opção 2
-                </div>    
+                <label  class="checkboxes" for="checkboxes">
+                    <input class="exemplos-input checkboxes-input" type="checkbox" name="checkboxes[]" value="opção 1" id="checkbox">opção 1
+                    <input class="exemplos-input checkboxes-input" type="checkbox" name="checkboxes[]" value="opção 2" id="checkbox">opção 2
+                </label>    
                 <p>Selecionar</p>
-                <div class="selecionar">
-                    <input class="exemplos-input selecionar-input" type="radio" name="selecionar" id="selecionar">
-                    <label class="exemplos-label selecionar-label" for="selecionar1">1</label>
-                    <input class="exemplos-input selecionar-input" type="radio" name="selecionar" id="selecionar">
-                    <label class="exemplos-label selecionar-label" for="selecionar2">2</label>
-                </div>
+                <label class="selecionar" for="selecionar">
+                    <input class="exemplos-input selecionar-input" type="radio" name="selecionar[]" value="sim" >Sim
+                    <input class="exemplos-input selecionar-input" type="radio" name="selecionar[]" value="nao" >Nao
+                </label>
 
                 <label class="exemplos-label" for="hidden">Hidden</label>
                 <input class="exemplos-input" type="hidden" name="hidden" id="hidden">
