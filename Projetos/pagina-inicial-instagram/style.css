@@ -84,6 +84,8 @@ body {
     color: var(--color-primaria);
     padding: 0.5rem;
     border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
 }
 
 .group__logout {
@@ -120,14 +122,16 @@ body {
     height: 3rem;
     width: 10rem;
     background-size: cover;
+    border: none;
+    cursor: pointer;
 }
 
 .download__button:nth-child(1) {
-    background-image: url(/img/apple-button.png);
+    background-image: url(./img/apple-button.png);
 }
 
 .download__button:nth-child(2) {
-    background-image: url(/img/googleplay-button.png);
+    background-image: url(./img/googleplay-button.png);
 }
 
 @media (max-width:1024px) {
