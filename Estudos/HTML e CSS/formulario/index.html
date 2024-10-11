@@ -15,13 +15,13 @@
             <h1>Exemplos de input</h1>
             <form class="formulario-exemplos" name="cadastro" method="post" target="_blank" autocomplete="on" onsubmit="alert('Enviado')" action="pages/example.html">
 
-                <label class="exemplos-label" for="name">Nome</label>
+                <label class="exemplos-label" for="name">Nome *</label>
                 <input class="exemplos-input" type="text" name="name" id="name">
 
-                <label class="exemplos-label" for="email">Email</label>
+                <label class="exemplos-label" for="email">Email *</label>
                 <input class="exemplos-input" type="email" name="email" id="email">
 
-                <label class="exemplos-label" for="senha">Senha</label>
+                <label class="exemplos-label" for="senha">Senha *</label>
                 <input class="exemplos-input" type="password" name="senha" id="senha">
 
                 <label class="exemplos-label" for="numero">Idade</label>
@@ -46,15 +46,17 @@
                 <input class="exemplos-input" type="month" name="color" id="mes">
 
                 <p>Checkboxes</p>
-                <label  class="checkboxes" for="checkboxes">
+                <div  class="checkboxes" for="checkboxes">
                     <input class="exemplos-input checkboxes-input" type="checkbox" name="checkboxes[]" value="opção 1" id="checkbox">opção 1
                     <input class="exemplos-input checkboxes-input" type="checkbox" name="checkboxes[]" value="opção 2" id="checkbox">opção 2
-                </label>    
+                    <input class="exemplos-input checkboxes-input" type="checkbox" name="checkboxes[]" disabled value="opção 3" id="checkbox">opção 3
+                </div>    
+                
                 <p>Selecionar</p>
-                <label class="selecionar" for="selecionar">
-                    <input class="exemplos-input selecionar-input" type="radio" name="selecionar[]" value="sim" >Sim
-                    <input class="exemplos-input selecionar-input" type="radio" name="selecionar[]" value="nao" >Nao
-                </label>
+                <div class="selecionar" for="selecionar">
+                    <input class="exemplos-input selecionar-input" type="radio" name="selecionar" value="sim" >Sim
+                    <input class="exemplos-input selecionar-input" type="radio" name="selecionar" value="nao" >Nao
+                </div>
 
                 <label class="exemplos-label" for="hidden">Hidden</label>
                 <input class="exemplos-input" type="hidden" name="hidden" id="hidden">
@@ -77,9 +79,22 @@
                 <label class="exemplos-label" for="imagem">Imagem</label>
                 <input class="exemplos-input" type="image" src="imgs/submit-button.svg" alt="Submit" id="imagem">
 
+                <label class="exemplos-label"for="cargo">Cargo</label>
+                <select class="exemplos-input" name="role" id="" multiple>
+                    <option value="">Selecione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option selected value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea rows="10" cols="30" name="mensagem" id=""></textarea>
+                
                 <div class="botoes">
-                    <button class="botao-resetar" type="reset">Redefinir</button>
-                    <button class="botao-enviar" type="submit">Enviar</button>
+                    <button class="botao-resetar"  type="button" name="clicavel" >Clicavel</button>
+                    <button class="botao-resetar" type="reset" name="redefinir">Redefinir</button>
+                    <button class="botao-enviar" type="submit" name="enviar" >Enviar</button>
                 </div>
             </form>    
         </section>

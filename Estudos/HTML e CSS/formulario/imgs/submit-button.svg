@@ -11,8 +11,8 @@
  </g>
  <defs>
   <radialGradient cx="67.9282" cy="67.8696" gradientUnits="userSpaceOnUse" id="XMLID_2_" r="63.1235">
-   <stop id="stop8" offset="0" stop-color="#D1F593"/>
-   <stop id="stop10" offset="1" stop-color="#81CE09"/>
+   <stop id="stop8" offset="0" stop-color="#a0f50e"/>
+   <stop id="stop10" offset="1" stop-color="#4c632b"/>
   </radialGradient>
  </defs>
 </svg>
