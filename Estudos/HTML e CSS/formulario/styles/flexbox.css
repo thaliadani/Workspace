@@ -14,6 +14,7 @@ body{
 
 .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -21,7 +22,7 @@ body{
 }
 
 .container__formulario{
-    background-color: rgb(53, 150, 150);
+    background-color: rgba(53, 150, 150, 0.418);
     width: 50%;
     padding: 2em;
     display: flex; 
@@ -33,6 +34,19 @@ body{
 
 h1{
     margin-bottom: 1em;
+}
+
+.exemplos-fieldset{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 80%;
+    border-radius: 3%;
+    border-color: rgb(233, 233, 233);
+    border-width: 0.5em;
+    border-style:double;
+    padding: 1em;
+    margin: 1em;
 }
 
 .formulario-exemplos{
@@ -99,5 +113,12 @@ h1{
 
 .botao-resetar{
     margin-right: 3em;
+}
+
+.footer{
+    text-align: center;
+    margin-top: 2em;
+    color: white;
+    font-size: 12px;
 }
 

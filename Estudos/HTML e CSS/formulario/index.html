@@ -14,36 +14,43 @@
         <section class="container__formulario">
             <h1>Exemplos de input</h1>
             <form class="formulario-exemplos" name="cadastro" method="post" target="_blank" autocomplete="on" onsubmit="alert('Enviado')" action="pages/example.html">
+                <fieldset class="exemplos-fieldset">
+                    <legend>Informações Pessoais</legend>
 
-                <label class="exemplos-label" for="name">Nome *</label>
-                <input class="exemplos-input" type="text" name="name" id="name">
+                    <label class="exemplos-label" for="name">Nome *</label>
+                    <input class="exemplos-input" type="text" name="name" id="name">
 
-                <label class="exemplos-label" for="email">Email *</label>
-                <input class="exemplos-input" type="email" name="email" id="email">
+                    <label class="exemplos-label" for="email">Email *</label>
+                    <input class="exemplos-input" type="email" name="email" id="email">
 
-                <label class="exemplos-label" for="senha">Senha *</label>
-                <input class="exemplos-input" type="password" name="senha" id="senha">
+                    <label class="exemplos-label" for="senha">Senha *</label>
+                    <input class="exemplos-input" type="password" name="senha" id="senha">
+                
+                    <label class="exemplos-label" for="numero">Idade</label>
+                    <input class="exemplos-input" type="number" name="numero" id="numero" min="0" max="100" step="5">
 
-                <label class="exemplos-label" for="numero">Idade</label>
-                <input class="exemplos-input" type="number" name="numero" id="numero" min="0" max="100" step="5">
+                    <label class="exemplos-label" for="telefone">Telefone</label>
+                    <input class="exemplos-input" type="tel" name="telefone" id="telefone">
+                </fieldset>
 
-                <label class="exemplos-label" for="telefone">Telefone</label>
-                <input class="exemplos-input" type="tel" name="telefone" id="telefone">
+                <fieldset class="exemplos-fieldset">
+                    <legend>Informações de Cadastro</legend>
+                    <label class="exemplos-label" for="date">Data</label>
+                    <input class="exemplos-input" type="date" name="name" id="date">
 
-                <label class="exemplos-label" for="date">Data</label>
-                <input class="exemplos-input" type="date" name="name" id="date">
+                    <label class="exemplos-label" for="data-hora">Data e Hora</label>
+                    <input class="exemplos-input" type="datetime-local" name="data-hora" id="data-hora"> 
 
-                <label class="exemplos-label" for="data-hora">Data e Hora</label>
-                <input class="exemplos-input" type="datetime-local" name="data-hora" id="data-hora"> 
+                    <label class="exemplos-label" for="hora">Hora</label>
+                    <input class="exemplos-input" type="time" name="hora" id="hora">
 
-                <label class="exemplos-label" for="hora">Hora</label>
-                <input class="exemplos-input" type="time" name="hora" id="hora">
+                    <label class="exemplos-label" for="semana">Semana</label>
+                    <input class="exemplos-input" type="week" name="semana" id="semana">
 
-                <label class="exemplos-label" for="semana">Semana</label>
-                <input class="exemplos-input" type="week" name="semana" id="semana">
-
-                <label class="exemplos-label" for="mes">Mês e Ano</label>
-                <input class="exemplos-input" type="month" name="color" id="mes">
+                    <label class="exemplos-label" for="mes">Mês e Ano</label>
+                    <input class="exemplos-input" type="month" name="color" id="mes">
+                    
+                </fieldset>
 
                 <p>Checkboxes</p>
                 <div  class="checkboxes" for="checkboxes">
@@ -96,8 +103,24 @@
                     <button class="botao-resetar" type="reset" name="redefinir">Redefinir</button>
                     <button class="botao-enviar" type="submit" name="enviar" >Enviar</button>
                 </div>
-            </form>    
+            </form>
+            
+            <div>
+                <iframe width="400" height="300" src="https://www.youtube-nocookie.com/embed/fzw_sQIvTbs?si=DSjDP2zaJKUP3SxW" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120048.4754518896!2d-44.046451087346554!3d-19.902697333574704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa690cacacf2c33%3A0x5b35795e3ad23997!2sBelo%20Horizonte%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1728680658317!5m2!1spt-BR!2sbr" 
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <iframe src="https://www.dio.me/" frameborder="0" width="400" height="300"></iframe>
+
+            </div>
+
         </section>
+
+        <footer class="footer">
+            <span>© 2022 OptimusTech. Todos os direitos reservados.</span>
+        </footer>
 
     </main>
 
