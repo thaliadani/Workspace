@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Estilizações CSS</title>
+</head>
+<body>
+    <main class="container">
+        <section class="card">
+            <h1>Estilizações CSS</h1>
+            
+            <div class="cores">
+                <h2>Cores</h2>
+                <ul id="lista-cores">
+                    <li>Cores pre-definidas</li>
+                    <li>Palavra-chave "currentcolor"</li>
+                    <li>Hexadecimal</li>
+                    <li>Hexadecimal com transparencia</li>
+                    <li>RGB</li>
+                    <li>RGBA</li>
+                    <li>HSL</li>
+                    <li>HSLA</li>
+                </ul>
+            </div>
+
+            <div class="imagens">
+                <h2>Imagens</h2>
+                <div id="fill">
+                    <code>Object-fit:fill;</code>
+                    <img src="./assets/img/kirby.jpg" alt="Kirby">
+                </div>
+                <div id="contain">
+                    <code>Object-fit:contain;</code>
+                    <img src="./assets/img/kirby.jpg" alt="Kirby">  
+                </div>
+                
+                <div id="cover">
+                    <code>Object-fit:cover;</code>
+                    <img src="./assets/img/kirby.jpg" alt="Kirby">
+                </div>
+
+                <div id="none">
+                    <code>Object-fit:none;</code>
+                    <img src="./assets/img/kirby.jpg" alt="Kirby">
+                </div> 
+                
+                <div id="scale-down">
+                    <code>Object-fit:scale-down;</code>
+                    <img src="./assets/img/kirby.jpg" alt="Kirby">
+                </div>
+                
+                <div id="position">
+                    <code>Object-position;</code>
+                    <img src="./assets/img/kirby.jpg" alt="Kirby">
+                </div>  
+                
+            </div>
+            
+            <div class="fundo">
+                <h2>Fundo dos elementos</h2>
+                <div id="fundo-image">
+                </div>
+
+                <div id="fundo-auto">
+                    <code>background-size:auto;</code>
+                </div>
+
+                <div id="fundo-cover">
+                    <code>background-size:cover;</code>
+                </div>
+
+                <div id="fundo-contain">
+                    <code>background-size:contain;</code>
+                </div>
+
+                <div id="fundo-valor">
+                    <code>background-size:valor;</code>
+                </div>
+
+                <div id="fundo-valor2">
+                    <code>background-size:valor1 valor2;</code>
+                </div>
+
+                <div id="fundo-camadas">
+                    <code>background-size:camada1, camada2;</code>
+                </div>
+
+                <div id="fundo-norepeat">
+                    <code>background-repeat: no-repeat;</code>
+                </div>
+
+                <div id="fundo-rx">
+                    <code>background-size: repeat-x;</code>
+                </div>
+
+                <div id="fundo-ry">
+                    <code>background-size: repeat-y;</code>
+                </div>
+
+                <div id="fundo-space">
+                    <code>background-size: space;</code>
+                </div>
+
+                <div id="fundo-round">
+                    <code>background-size: round;</code>
+                </div>
+
+                <div id="posicionamento">
+                    <code>background-position: horizontal vertical;</code>
+                </div>
+
+                <div id="fixed">
+                    <code>background-attachment: fixed;</code>                    
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus distinctio quia saepe, dolore voluptatum veritatis sed iste? Eos repudiandae omnis autem, cupiditate odio dolor, voluptatibus architecto, deserunt molestiae ullam deleniti!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus distinctio quia saepe, dolore voluptatum veritatis sed iste? Eos repudiandae omnis autem, cupiditate odio dolor, voluptatibus architecto, deserunt molestiae ullam deleniti!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus distinctio quia saepe, dolore voluptatum veritatis sed iste? Eos repudiandae omnis autem, cupiditate odio dolor, voluptatibus architecto, deserunt molestiae ullam deleniti!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus distinctio quia saepe, dolore voluptatum veritatis sed iste? Eos repudiandae omnis autem, cupiditate odio dolor, voluptatibus architecto, deserunt molestiae ullam deleniti!</p>
+                </div>
+
+                <div id="scroll">
+                    <code>background-attachment: scroll;</code>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum dolorem. Voluptas, tenetur? Rerum facilis mollitia deleniti distinctio, soluta recusandae obcaecati. Cupiditate animi exercitationem, aliquid soluta quaerat sed libero provident?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum dolorem. Voluptas, tenetur? Rerum facilis mollitia deleniti distinctio, soluta recusandae obcaecati. Cupiditate animi exercitationem, aliquid soluta quaerat sed libero provident?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus distinctio quia saepe, dolore voluptatum veritatis sed iste? Eos repudiandae omnis autem, cupiditate odio dolor, voluptatibus architecto, deserunt molestiae ullam deleniti!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum dolorem. Voluptas, tenetur? Rerum facilis mollitia deleniti distinctio, soluta recusandae obcaecati. Cupiditate animi exercitationem, aliquid soluta quaerat sed libero provident?</p>
+                </div>
+
+                <div id="local">
+                    <code>background-attachment: local;</code>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum dolorem. Voluptas, tenetur? Rerum facilis mollitia deleniti distinctio, soluta recusandae obcaecati. Cupiditate animi exercitationem, aliquid soluta quaerat sed libero provident?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum dolorem. Voluptas, tenetur? Rerum facilis mollitia deleniti distinctio, soluta recusandae obcaecati. Cupiditate animi exercitationem, aliquid soluta quaerat sed libero provident?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, cum dolorem. Voluptas, tenetur? Rerum facilis mollitia deleniti distinctio, soluta recusandae obcaecati. Cupiditate animi exercitationem, aliquid soluta quaerat sed libero provident?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus distinctio quia saepe, dolore voluptatum veritatis sed iste? Eos repudiandae omnis autem, cupiditate odio dolor, voluptatibus architecto, deserunt molestiae ullam deleniti!</p>
+                </div>
+
+                <div id="origin-padding">
+                    <code>background-origin: padding-box; </code>
+                </div>
+
+                <div id="origin-border">
+                    <code>background-origin: border-box; </code>
+                </div>
+
+                <div id="origin-content">
+                    <code>background-origin: content-box; </code>
+                </div>
+
+                <div id="clip-padding"> 
+                    <h3>Color padding CSS</h3>  
+                </div>
+
+                <div id="clip-border"> 
+                    <h3>Color border CSS</h3>  
+                </div>
+
+                <div id="clip-content">  
+                    <h3>Color content CSS</h3>
+                </div>
+
+                <div id="text">  
+                    <h3>"Color text CSS</h3>
+                </div>
+
+                <div id="mesclagem">  
+                    <h3>"Color text CSS</h3>
+                </div>
+                
+            </div>
+            <div class="bordas">
+                <h2>Bordas</h2>
+            </div>
+
+            <div class="fontes">
+                <h2>Fontes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quidem.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quidem.</p>
+            </div>
+
+            <div class="textos">
+                <h2>Textos</h2>
+            </div>
+
+            <div class="sombras">
+                <h2>Sombras</h2>
+            </div>
+
+            <div class="outros">
+                <h2>Outros</h2>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,248 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 3em 0;
+    padding: 3em 0;
+    font-size: 20px;
+    background-color: #789DBC;
+    color: rgb(255, 255, 255);
+}
+
+.card>div{
+    padding: 1em;
+}
+
+#lista-cores>li:first-child{
+    background: aqua;
+}
+
+#lista-cores>li:nth-child(2){
+    background: green;
+    color: rgb(0, 0, 0);
+    border: 3px solid currentColor;
+}
+
+#lista-cores>li:nth-child(3){
+    background: #6d0202;
+}
+
+#lista-cores>li:nth-child(4){
+    background: #6619194f;
+}
+
+#lista-cores>li:nth-child(5){
+    background: rgb(66, 66, 194);
+}
+
+#lista-cores>li:nth-child(6){
+   background: rgba(55, 216, 23, 0.39);
+}
+
+#lista-cores>li:nth-child(7){
+    background: hsl(19, 87%, 47%);
+}
+
+#lista-cores>li:nth-child(8){
+    background: hsla(298, 89%, 48%, 0.397);
+}
+
+.imagens>div{
+    border: #6619194f 3px solid;
+    margin: 2em;
+}
+
+.imagens>div>img{
+    width: 200px;
+    height: 300px;
+}
+
+code{
+    background: #bd6716;
+}
+
+#fill>img{
+    object-fit:fill;
+    
+}
+
+#contain>img{
+    object-fit:contain;
+}
+
+#cover>img{
+    object-fit: cover;
+}
+
+#none>img{
+    object-fit: none;
+}
+
+#scale-down>img{
+    object-fit: scale-down;
+}
+
+#position>img{
+    object-fit: cover;
+    object-position: right center;
+    /* object-position: -290px 50%; */
+}
+
+.fundo>div{
+    border: #6619194f 3px solid;
+    margin: 2em 0;
+    width: 440px;
+    height: 250px;
+}
+
+#fundo-image{
+    background-image: repeating-linear-gradient(to top, rgb(133, 16, 35) 0 20px, rgb(68, 54, 199) 20px 40px);
+}
+
+#fundo-auto{
+    background-image: url('../img/Kirby-Background-PNG.png');
+    background-size: auto;
+}
+
+#fundo-cover{
+    background-image: url('../img/Kirby-Background-PNG.png');
+    background-size: cover;
+}
+
+#fundo-contain{
+    background-image: url('../img/Kirby-Background-PNG.png');
+    background-size: contain;
+}
+
+#fundo-valor{
+    background-image: url('../img/Kirby-Background-PNG.png');
+    background-size: 80px;
+}
+
+#fundo-valor2{
+    background-image: url('../img/Kirby-Background-PNG.png');
+    background-size: 80px 50%;
+}
+
+#fundo-camadas{
+    background-image: url('../img/Kirby-Background-PNG.png'),url('../img/kirby.jpg');
+    background-size: 40px 20%, cover;
+}
+
+#fundo-norepeat,#fundo-rx,#fundo-ry,#fundo-space,#fundo-round{
+    background-image: url('../img/Kirby-Background-PNG.png');
+    background-size: 40%,cover;
+}
+
+#fundo-norepeat{
+    background-repeat: no-repeat;
+}
+
+#fundo-rx{
+    background-repeat: repeat-x;
+}
+
+#fundo-ry{
+    background-repeat: repeat-y;
+}
+
+#fundo-space{
+    background-repeat: space;
+}
+
+#fundo-round{
+    background-repeat: round;
+}
+
+#posicionamento{
+    background-image: url('../img/Kirby-Background-PNG.png');
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position: center 20px;
+}
+
+#fixed,#scroll,#local{
+    background-image: url('../img/Kirby-Background-PNG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+#fixed{
+    background-attachment: fixed;
+}
+
+#scroll{
+    background-attachment: scroll;
+}
+
+#local{
+    background-attachment: local;
+}
+
+#origin-padding, #origin-border, #origin-content{
+    background-image: url('../img/kirby.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 30px;
+    width:  500px;
+    height: 400px;
+    border: #ffffff 8px dotted;
+}
+
+#origin-padding{
+    background-origin: padding-box; 
+}
+
+#origin-border{
+    background-origin: border-box;
+}
+
+#origin-content{
+    background-origin: content-box;
+}
+
+#clip-padding, #clip-border, #clip-content, #text{
+    background:url('https://www.pixelstalk.net/wp-content/uploads/2016/04/Images-abstract-minimalist-wallpaper-HD.jpg');
+    background-repeat: no-repeat;
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+    border: #000000 8px dotted;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#clip-padding{
+    background-clip: padding-box;
+}
+
+#clip-border{       
+    background-clip: border-box;    
+}
+
+#clip-content{
+    background-clip: content-box;
+}
+
+#text{
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+#mesclagem{
+    background-color: #aa0d0d;
+    background-image:url('https://www.pixelstalk.net/wp-content/uploads/2016/04/Images-abstract-minimalist-wallpaper-HD.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-clip: padding-box;
+    padding: 30px;
+    width: 400px;
+    height: 400px;
+    border: #000000 8px dotted;
+    font-size: 50px;
+    text-transform: uppercase;
+    background-blend-mode:screen;
+}
