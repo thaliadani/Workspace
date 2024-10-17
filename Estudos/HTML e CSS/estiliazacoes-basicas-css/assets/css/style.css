@@ -1,12 +1,26 @@
-.container{
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+
+@font-face{
+    font-family: Play;
+    src: local(), url('../fonts/PlaywriteGBS-Regular.ttf');
+}
+
+body,.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.card{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     margin: 3em 0;
     padding: 3em 0;
     font-size: 20px;
-    background-color: #789DBC;
+    background-color: #6678cab0;
     color: rgb(255, 255, 255);
 }
 
@@ -246,3 +260,172 @@ code{
     text-transform: uppercase;
     background-blend-mode:screen;
 }
+
+#borda1,#borda2{
+    width: 200px;
+    height: 200px;
+    margin: 50px 0;
+    background-color: tomato;
+    /* border-radius: 50%; */
+}
+
+#borda1{
+    /* border: rgb(255, 255, 255) 10px solid; */
+    
+    /* border-bottom: #000000 10px solid;
+    border-top: #10b91e 10px double; */
+    
+    /* border-width: 20px 10px;
+    border-style: solid;
+    border-color: red blue; */
+    
+    /* border-image-source: url('https://www.pixelstalk.net/wp-content/uploads/2016/04/Images-abstract-minimalist-wallpaper-HD.jpg');
+    border-image-width: 15px;
+    border-image-slice: 145;
+    border-image-repeat: round;
+    border-image-outset: 24px 40px; */
+
+    border-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/04/Images-abstract-minimalist-wallpaper-HD.jpg') 145 / 15px / 24px 40px round;
+}      
+
+#borda2{
+    border-image-source: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 36%, rgba(6,87,173,1) 66%, rgba(0,212,255,1) 100%);
+    border-image-width: 10px 20px 5px;
+    border-image-slice: 1;
+}
+
+.fontes>h2{
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: Play;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+.fontes>p{
+    /* <weight>: Use a value from 100 to 400 */
+
+    /* font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 18px;
+    line-height: 2; */
+
+    font: italic small-caps 200 18px/2 "Playwrite GB S", cursive; 
+}
+
+.textos{
+    width: 550px;
+}
+
+#text1{
+    text-transform:uppercase;
+    text-align: justify;
+    text-decoration:underline dotted red 3px;
+    text-indent: 40px;
+    letter-spacing: 10px;
+    overflow: hidden;
+    /* word-break:break-all; */
+    white-space: nowrap;
+    text-overflow: ellipsis; 
+}
+
+#text2{
+    background-color: rgb(75, 5, 5);
+    text-decoration: underline wavy rgb(59, 145, 2) 2px;
+    text-align: center;
+    word-spacing: 40px;
+    /* white-space: nowrap; */
+    word-wrap: break-word;
+    writing-mode:vertical-rl;
+}
+
+.textos>a{
+    text-decoration: none;
+}
+
+#img-sombra{
+    width: 400px;
+    height: 400px;
+    background-image: url(../img/Kirby-Background-PNG.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(20px 20px 10px #000000);
+
+}	
+
+#caixa-sombra{
+    width: 300px;
+    height: 300px;
+    border: 3px solid #ec0c0c;
+    box-shadow:inset 30px 30px 20px -7px #000000,30px 30px 20px -7px #0a9ea3;
+}
+
+#caixa-sombra>p{
+    font-size: 40px;
+    text-shadow: 5px 5px 5px #09ff00;
+}
+
+.outros>div{
+    margin: 18px;
+}
+
+#transparencia{
+    padding: 15px;
+    border: #000000 5px solid;
+    background-color: rgb(196, 59, 14);
+    font-size: 24px;
+    text-align: center;
+}
+
+#transparencia img{
+    width: 400px;
+    opacity: .5;
+}
+
+#overflow-hidden{
+    width: 400px;
+    height: 400px;
+    padding: 5px 20px;
+    border: #000000 5px solid;
+    background-color: rgb(196, 59, 14);
+    font-size: 24px;
+    text-align: justify;
+    overflow:hidden;
+}
+
+#overflow-scroll{
+    width: 400px;
+    height: 400px;
+    padding: 5px 20px;
+    border: #000000 5px solid;
+    background-color: rgb(196, 59, 14);
+    font-size: 24px;
+    text-align: justify;
+    overflow:scroll;
+}
+
+#overflow-y-x{
+    width: 600px;
+    height: 400px;
+    padding: 5px 20px;
+    border: #000000 5px solid;
+    background-color: rgb(196, 59, 14);
+    font-size: 24px;
+    text-align: justify;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+#overflow-auto{
+    width: 400px;
+    height: 400px;
+    padding: 5px 20px;
+    border: #000000 5px solid;
+    background-color: rgb(196, 59, 14);
+    font-size: 24px;
+    text-align: justify;
+    overflow:auto;
+}
+
