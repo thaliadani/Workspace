@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('./reset.css');
+
+body, .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: raleway, sans-serif;
+    font-weight: 400;
+}
+
+.card-banner{
+    background-image: url(../imgs/banner.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    border-bottom: 1px solid #33A8DB;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 85px 0 5px;
+    background: linear-gradient(180deg, rgba(11, 46, 70, 0.6) 0%, rgba(20, 144, 206, 0) 100%);
+}
+
+.banner h1{
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 46.96px;
+    padding-top: 10px;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-clip: text;
+}
+
+.banner p{
+    font-size: 20px;
+    line-height: 23.48px;
+    width: 510px;
+}
+
+#banner-botao{
+    width: 326px;
+    height: 57px;
+    margin: 25px 0 70px;
+    font-size: 15px;
+    justify-content: center;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color:#31A8DD;
+    border-image-source: linear-gradient(180deg, #3BA1CD 0%, #1572B7 100%);
+    border-image-width: 2px;
+    border-image-slice: 1;
+    background-color: transparent;
+}
+
+.card-curso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap:24px;
+    padding: 85px 0px 60px;
+    border-bottom: 1px solid #33A8DB;
+}
+
+.card-curso h2{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    letter-spacing: 5px;
+    color: #33A8DB;
+}
+
+.card-curso p{
+    width: 792px;
+    height: 38px;
+}
+
+.card-curso ul span{
+    color:  #33A8DB;
+}
+
+.card-curso ul li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 535px;
+    height: 51px;
+    background-color: #252525;
+    border: 1px solid #33A8DB;
+    border-radius: 57px;
+    margin-bottom: 30px;
+}
+
+.card-transforme{
+    display: flex;
+    width: auto;
+    height: 363px;
+    background-image: url(../imgs/woman-code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-bottom: 1px solid #33A8DB; 
+    text-align: center;
+    justify-content: left;
+    align-items: center;
+    padding: 0 200px;
+}
+
+.card-transforme h2{
+    width: 244px;
+    height: 141px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 46.96px;
+    text-shadow: 3px 2px #33A8DB;
+}
+
+.card-desafios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap:50px;
+    padding: 85px;
+    border-bottom: 1px solid #33A8DB;
+}
+
+.card-desafios h2{
+    width: 792px;
+    height: 38px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.57px;
+    letter-spacing: 5px;
+    color: #33A8DB;
+}
+
+.card-desafios p{
+    width: 792px;
+    height: 38px;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px 0;
+    background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 99.99%, rgba(51, 168, 219, 0.2) 100%);
+}
+
+.rodape #link{
+    color: #33A8DB;
+    text-decoration: none;
+}
+
