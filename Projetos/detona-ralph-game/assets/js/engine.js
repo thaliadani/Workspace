@@ -51,7 +51,7 @@ function randomSquare() {
 function addListerHitBox() {
     state.view.squares.forEach((square) => {
         square.addEventListener("mousedown", () => {
-            if (square.id === state.values.hitPosition) {
+            if (square.id == state.values.hitPosition) {
                 state.values.result++;
                 state.view.score.textContent = state.values.result;
                 state.values.hitPosition = null;
