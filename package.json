@@ -6,5 +6,14 @@
     "@eslint/js": "^9.16.0",
     "eslint": "^9.16.0",
     "globals": "^15.13.0"
-  }
+  },
+  "name": "workspace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
