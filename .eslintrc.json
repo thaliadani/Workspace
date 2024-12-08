@@ -1,5 +1,5 @@
 {
-    "env":{
+    "env": {
         "browser": true,
         "commonjs": true,
         "es2021": true
@@ -12,6 +12,7 @@
         "ecmaVersion": "latest"
     },
     "rules": {
-
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"]
     }
 }
