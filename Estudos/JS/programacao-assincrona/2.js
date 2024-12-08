@@ -1,5 +1,9 @@
+const fs = require("fs");
+
+console.log("Antes do readfile");
+
 const promessa = new Promise((resolve, reject) => {
-    fs.readFile(filePath, "utf8", (erro, conteudoDoArquivo) => {
+    fs.readFile("Estudos/JS/programacao-assincrona/arquivo.txt", (erro, conteudoDoArquivo) => {
         if (erro) {
             reject("Erro ao ler o arquivo:", erro);
         } else {
@@ -8,4 +12,8 @@ const promessa = new Promise((resolve, reject) => {
     });
 });
 
-console.log(promessa);
+promessa.then((retornoDoResolve) => {
+    console.log("Deu certo:", retornoDoResolve);
+}).catch((erro) => {
+    console.log("Deu errado:", erro);
+})
