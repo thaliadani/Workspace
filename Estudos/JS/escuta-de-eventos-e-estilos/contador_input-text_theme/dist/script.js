@@ -33,9 +33,8 @@ if (contador) {
 // botaoAumentar?.classList.add("btn");
 // botaoDiminuir?.classList.remove("btn");
 const themeButton = document.querySelector("#theme");
-let darkTheme = false;
-themeButton === null || themeButton === void 0 ? void 0 : themeButton.addEventListener("click", () => {
-    darkTheme = !darkTheme;
+let darkTheme;
+function alterarTema() {
     const body = document.querySelector("body");
     if (darkTheme) {
         body.style.backgroundColor = "black";
@@ -45,4 +44,15 @@ themeButton === null || themeButton === void 0 ? void 0 : themeButton.addEventLi
         body.style.backgroundColor = "white";
         body.style.color = "black";
     }
+}
+//Definindo uma funcao que sera executada quando a pagina for carregada
+window.onload = () => {
+    const isDarkThemeStorage = localStorage.getItem("isDarkTheme");
+    darkTheme = isDarkThemeStorage === "true";
+    alterarTema();
+};
+themeButton === null || themeButton === void 0 ? void 0 : themeButton.addEventListener("click", () => {
+    darkTheme = !darkTheme;
+    localStorage.setItem("isDarkTheme", String(darkTheme));
+    alterarTema();
 });

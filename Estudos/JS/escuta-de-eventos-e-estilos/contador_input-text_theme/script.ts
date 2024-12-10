@@ -54,18 +54,37 @@ if (contador) {
 
 const themeButton = document.querySelector("#theme") as HTMLButtonElement;
 
-let darkTheme = false;
+let darkTheme: boolean;
 
-themeButton?.addEventListener("click", () => {
-  darkTheme = !darkTheme;
-
+function alterarTema() {
   const body = document.querySelector("body") as HTMLElement;
 
   if (darkTheme) {
     body.style.backgroundColor = "black";
     body.style.color = "white";
-  }else{
+  } else {
     body.style.backgroundColor = "white";
     body.style.color = "black";
   }
+}
+
+//Definindo uma funcao que sera executada quando a pagina for carregada
+window.onload = () => {
+  const isDarkThemeStorage = localStorage.getItem("isDarkTheme");
+
+  darkTheme = isDarkThemeStorage === "true";
+
+  alterarTema();
+
+};
+
+themeButton?.addEventListener("click", () => {
+  darkTheme = !darkTheme;
+
+  localStorage.setItem("isDarkTheme", String(darkTheme));
+
+  alterarTema();
+  
 });
+
+
