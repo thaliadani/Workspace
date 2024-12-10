@@ -1,6 +1,3 @@
-//* Fetch API
-
-
 //then/catch
 
 // fetch('https://viacep.com.br/ws/01001000/json/')
@@ -12,7 +9,6 @@
 // }).catch((erro) => {
 //     console.log(erro)
 // })
-
 
 //async/await
 
