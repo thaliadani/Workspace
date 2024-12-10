@@ -10,8 +10,7 @@ A Fetch API usa Promises, uma maneira moderna de lidar com operações assíncro
 
 Aqui está um exemplo básico de como usar a Fetch API para obter dados de uma URL:
 
-` 
-    fetch('<https://api.exemplo.com/dados>')
+` fetch('<https://api.exemplo.com/dados>')
     .then(response => {
         if (!response.ok) {
             throw new Error('Erro na requisição: ' + response.status);
