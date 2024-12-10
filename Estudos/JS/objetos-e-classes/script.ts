@@ -86,3 +86,13 @@ const professor1 = new professor('Thalia', 23, 1.58, '111.111.111-11', 'Matemá
 console.log(professor1);
 console.log(professor1.dormir());
 console.log(professor1.ensinar());
+
+//Poliforfismo
+
+console.log(pessoa1 instanceof Pessoa); //true
+
+console.log(pessoa1 instanceof professor); //false
+
+console.log(professor1 instanceof Pessoa); //true
+
+console.log(professor1 instanceof professor); //true
