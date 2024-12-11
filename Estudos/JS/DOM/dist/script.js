@@ -29,4 +29,10 @@ emailInput.addEventListener("input", () => {
 const listaUl = document.querySelector('ul#list');
 const novaTagLi = document.createElement('li'); //criando uma tag li vazia
 novaTagLi.textContent = "Item 2"; //adicionando um texto dentro da tag li
-listaUl.appendChild(novaTagLi);
+//Inserir um elemento no final da lista
+// listaUl.appendChild(novaTagLi);
+//Inserir um elemento antes de outro
+const listaLis = document.querySelectorAll('li');
+listaUl.insertBefore(novaTagLi, listaLis[0]);
+//Remover um elemento
+listaUl.removeChild(listaLis[0]);
