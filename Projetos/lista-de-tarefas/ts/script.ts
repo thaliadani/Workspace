@@ -4,24 +4,7 @@ const listaDeTarefas = document.querySelector('#lista');
 
 let tarefas: any[] = [];
 
-formulario?.addEventListener('submit', (evento) => {
-    evento.preventDefault();// Evita o comportamento padrão do formulário, que seria recarregar a página.
-
-    const tituloDaTarefa = (document.querySelector('#tarefa') as HTMLInputElement).value;
-
-    if (tituloDaTarefa.length < 3) {
-        alert('A tarefa precisa ter no mínimo 3 caracteres.');
-        return;
-    }
-
-    //Adicionando a tarefa no array de tarefas
-    tarefas.push({
-        titulo: tituloDaTarefa,
-        feito: false
-    });
-
-
-    //Adicionando a tarefa no HTML
+function renderizarTarefasNoHTML(tituloDaTarefa: string, feito: boolean = false) {
     const li = document.createElement('li');
     
     const input = document.createElement('input');
@@ -47,10 +30,18 @@ formulario?.addEventListener('submit', (evento) => {
         }
         return t
         })
+
+        localStorage.setItem('tarefas', JSON.stringify(tarefas));
     })
+
+    input.checked = feito
 
     const span = document.createElement('span');
     span.textContent = tituloDaTarefa;
+    
+    if (feito) {
+        span.style.textDecoration = 'line-through';
+    }
     
     const button = document.createElement('button');
     button.textContent = "-";
@@ -63,6 +54,9 @@ formulario?.addEventListener('submit', (evento) => {
             tarefas = tarefas.filter(t => t.titulo !== tituloRemover);
     
             listaDeTarefas?.removeChild(liRemover!);
+
+            localStorage.setItem('tarefas', JSON.stringify(tarefas));
+
         }
     })
 
@@ -71,6 +65,38 @@ formulario?.addEventListener('submit', (evento) => {
     li.appendChild(button);
 
     listaDeTarefas?.appendChild(li);
+}
+
+window.onload = () => {
+    const tarefasStorage = localStorage.getItem('tarefas');
+    if (tarefasStorage) {
+        tarefas = JSON.parse(tarefasStorage);
+
+        tarefas.forEach(t => {
+            renderizarTarefasNoHTML(t.titulo, t.feito);
+        });
+    }
+}
+
+formulario?.addEventListener('submit', (evento) => {
+    evento.preventDefault();// Evita o comportamento padrão do formulário, que seria recarregar a página.
+
+    const tituloDaTarefa = (document.querySelector('#tarefa') as HTMLInputElement).value;
+
+    if (tituloDaTarefa.length < 3) {
+        alert('A tarefa precisa ter no mínimo 3 caracteres.');
+        return;
+    }
+
+    //Adicionando a tarefa no array de tarefas
+    tarefas.push({
+        titulo: tituloDaTarefa,
+        feito: false
+    });
+
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+
+    renderizarTarefasNoHTML(tituloDaTarefa);
 
     (document.querySelector('#tarefa') as HTMLInputElement).value = '';
     

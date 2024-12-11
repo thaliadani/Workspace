@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,7 +18,7 @@ body{
     color: #ffffff;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@ body{
     border-radius: 1rem;
 }
 
-#formulario{
+#formulario {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,14 +39,14 @@ body{
     width: 100%;
 }
 
-.container #formulario input{
+.container #formulario input {
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: .5rem;
     font-size: 1rem;
 }
 
-.container #formulario button{
+.container #formulario button {
     background-color: #4CAF50;
     color: white;
     padding: 1rem 1.5rem;
@@ -56,11 +56,11 @@ body{
     font-size: 1.2rem;
 }
 
-.container #formulario button:hover{
+.container #formulario button:hover {
     background-color: #45a049;
 }
 
-.container .tarefas{
+.container .tarefas {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,15 +69,80 @@ body{
     width: 100%;
 }
 
-.container .tarefas li{
+.container .tarefas #lista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container .tarefas #lista li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-align: center;
     margin-bottom: 1rem;
     padding: 1rem;
-    width: 100%;
+    width: 90%;
     border: 1px solid #ccc;
     border-radius: .5rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    gap: 1rem;
 }
 
+.container .tarefas #lista input[type="checkbox"] {
+    appearance: none;
+    height: 1.5em;
+    position: relative;
+    width: 1.5em;
+}
+
+input[type='checkbox']::after,
+input[type='checkbox']::before {
+    box-sizing: border-box;
+    position: absolute;
+}
+
+input[type='checkbox']::after {
+    border-bottom: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+    content: '';
+    height: 75%;
+    left: 50%;
+    top: 50%;
+    transform: scale(0.1) translate(-50%, -50%);
+    transition: transform 0.2s;
+    width: 40%;
+}
+
+input[type='checkbox']::before {
+    border: 3px solid #000000;
+    border-radius: 0.25em;
+    content: '';
+    height: 100%;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+input[type='checkbox']:checked::after {
+    transform: rotate(35deg) scale(1) translate(-100%, -30%);
+}
+
+input[type='checkbox']:checked::before {
+    background-color: #000000;
+}
+
+.container .tarefas #lista button {
+    background-color: #f44336;
+    color: white;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.container .tarefas #lista button:hover {
+    background-color: #d32f2f;
+}

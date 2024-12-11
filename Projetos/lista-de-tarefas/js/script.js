@@ -3,19 +3,7 @@ const formulario = document.querySelector('#formulario');
 const adicionarTarefa = document.querySelector('#adicionar');
 const listaDeTarefas = document.querySelector('#lista');
 let tarefas = [];
-formulario === null || formulario === void 0 ? void 0 : formulario.addEventListener('submit', (evento) => {
-    evento.preventDefault(); // Evita o comportamento padrão do formulário, que seria recarregar a página.
-    const tituloDaTarefa = document.querySelector('#tarefa').value;
-    if (tituloDaTarefa.length < 3) {
-        alert('A tarefa precisa ter no mínimo 3 caracteres.');
-        return;
-    }
-    //Adicionando a tarefa no array de tarefas
-    tarefas.push({
-        titulo: tituloDaTarefa,
-        feito: false
-    });
-    //Adicionando a tarefa no HTML
+function renderizarTarefasNoHTML(tituloDaTarefa, feito = false) {
     const li = document.createElement('li');
     const input = document.createElement('input');
     input.setAttribute('type', 'checkbox');
@@ -38,9 +26,14 @@ formulario === null || formulario === void 0 ? void 0 : formulario.addEventListe
             }
             return t;
         });
+        localStorage.setItem('tarefas', JSON.stringify(tarefas));
     });
+    input.checked = feito;
     const span = document.createElement('span');
     span.textContent = tituloDaTarefa;
+    if (feito) {
+        span.style.textDecoration = 'line-through';
+    }
     const button = document.createElement('button');
     button.textContent = "-";
     button.addEventListener('click', (evento) => {
@@ -50,11 +43,36 @@ formulario === null || formulario === void 0 ? void 0 : formulario.addEventListe
             const tituloRemover = (_a = liRemover === null || liRemover === void 0 ? void 0 : liRemover.querySelector('span')) === null || _a === void 0 ? void 0 : _a.textContent;
             tarefas = tarefas.filter(t => t.titulo !== tituloRemover);
             listaDeTarefas === null || listaDeTarefas === void 0 ? void 0 : listaDeTarefas.removeChild(liRemover);
+            localStorage.setItem('tarefas', JSON.stringify(tarefas));
         }
     });
     li.appendChild(input);
     li.appendChild(span);
     li.appendChild(button);
     listaDeTarefas === null || listaDeTarefas === void 0 ? void 0 : listaDeTarefas.appendChild(li);
+}
+window.onload = () => {
+    const tarefasStorage = localStorage.getItem('tarefas');
+    if (tarefasStorage) {
+        tarefas = JSON.parse(tarefasStorage);
+        tarefas.forEach(t => {
+            renderizarTarefasNoHTML(t.titulo, t.feito);
+        });
+    }
+};
+formulario === null || formulario === void 0 ? void 0 : formulario.addEventListener('submit', (evento) => {
+    evento.preventDefault(); // Evita o comportamento padrão do formulário, que seria recarregar a página.
+    const tituloDaTarefa = document.querySelector('#tarefa').value;
+    if (tituloDaTarefa.length < 3) {
+        alert('A tarefa precisa ter no mínimo 3 caracteres.');
+        return;
+    }
+    //Adicionando a tarefa no array de tarefas
+    tarefas.push({
+        titulo: tituloDaTarefa,
+        feito: false
+    });
+    localStorage.setItem('tarefas', JSON.stringify(tarefas));
+    renderizarTarefasNoHTML(tituloDaTarefa);
     document.querySelector('#tarefa').value = '';
 });
