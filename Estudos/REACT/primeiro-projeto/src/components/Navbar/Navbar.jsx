@@ -1,6 +1,7 @@
 import logoImg from "../../assets/imgs/logo.png";
+import "./Navbar.css";
 
-function Navbar() {
+export function Navbar() {
     return (
         <header>
         <nav id="navbar">
@@ -10,15 +11,13 @@ function Navbar() {
             </div>
 
             <ul className="nav-list">
-            <li><link href="#">Home</link></li>
-            <li><link href="#">Trending</link></li>
-            <li><link href="#">Categories</link></li>
-            <li><link href="#">About us</link></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Trending</a></li>
+            <li><a href="/">Categories</a></li>
+            <li><a href="/">About us</a></li>
             </ul>
         </nav>
         </header>
     )
     
 }
-
-export default Navbar;
