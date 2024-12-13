@@ -1,9 +1,9 @@
-function App() {
-  return (
-    <div>
-      <h1>Olá Mundo</h1>
-    </div>
-  )
+import Navbar from "./components/Navbar/Navbar";
+import "./styles/App.css";
+
+function App() { 
+  return <Navbar />
+  
 }
 
-export default App
+export default App;
