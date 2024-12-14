@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 export function Counter() {
     const [contador, setContador] = useState(0);
+    const [name, setName] = useState('');
+    const [password, setPassword] = useState('');
 
     return (
         <div 
@@ -21,8 +23,13 @@ export function Counter() {
             </div>
 
             <form style={{display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '2rem'}}>
-                <input type='text' placeholder='Nome'/>
-                <input type='password' placeholder='Senha'/>
+                
+                <input type='text' placeholder='Nome' 
+                value={name} 
+                onChange={(event) => setName(event.target.value)}/>
+                
+                <input type='password' placeholder='Senha' value={password} 
+                onChange={(event) => setPassword(event.target.value)}/>
                 <button type='submit'>Enviar</button>
             </form>
         </div>
