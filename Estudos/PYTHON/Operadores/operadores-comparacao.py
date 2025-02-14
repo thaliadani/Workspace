@@ -7,3 +7,8 @@ print(saldo >= saque)
 print(saldo <= saque)
 print(saldo == saque)
 print(saldo != saque)
+
+print("Guilherme" == "Guilherme")
+print("Guilherme" != "Guilherme")
+
+print("Guilherme" == "guilherme")
