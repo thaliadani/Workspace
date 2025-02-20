@@ -143,7 +143,7 @@ contato = {"nome": "Guilherme","telefone": "3333-2221"}
 contato.setdefault("nome", "Paula")
 print(contato)
 
-contato.setdefault("idade", 28)
+contato.setdefault("idade", 28) # type: ignore
 print(contato)
 
 #update() - Atualiza o dicionario com o outro dicionario

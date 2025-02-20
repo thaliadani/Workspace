@@ -1,4 +1,4 @@
-from datetime import date, time, datetime, timedelta
+from datetime import date, time, datetime
 
 # Criando uma data
 hoje = date.today()
@@ -11,7 +11,3 @@ print("Hora:", hora)  # Saída: Hora: 14:30:00
 # Criando uma data e hora
 agora = datetime.now()
 print("Data e hora atuais:", agora)
-
-# Calculando diferenças
-amanha = hoje + timedelta(days=1)
-print("Amanhã:", amanha)
