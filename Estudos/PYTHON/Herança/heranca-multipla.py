@@ -1,12 +1,12 @@
 class Animal :
     def __init__(self, nome, cor, peso, idade):       
-        self.__nome = nome
-        self.__cor = cor
-        self.__peso = peso
-        self.__idade = idade
+        self.nome = nome
+        self.cor = cor
+        self.peso = peso
+        self.idade = idade
         
     def get_nome(self):
-        return self.__nome
+        return self.nome
     
     def comer(self):
         return f"{self.get_nome()} esta comendo"
@@ -31,7 +31,7 @@ class Ave(Animal):
     def voando(self):
         return f"{self.get_nome()} esta voando"
     def nadando(self):
-        return f"{'Sim' if self.voando else 'Nao'} esta nadando"
+        return f"{'Sim' if self.nadando else 'Nao'} esta nadando"
 
 
 class Cachorro(Mamifero):
