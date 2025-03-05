@@ -22,7 +22,7 @@ class Caminhao(Veiculo):
         super().__init__(marca, modelo, cor, placa)
         self.carregando_carga = carregando_carga    
     def carregar_carga(self):
-        print(f"{'Sim' if self.carregar_carga else 'Nao'} estou carregando")
+        print(f"{'Sim' if self.carregando_carga else 'Nao'} estou carregando")
         
 
 carro1 = Carro("Fiat", "Palio", "Preto", "ABC-1234")
