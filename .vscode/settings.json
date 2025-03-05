@@ -1,5 +1,14 @@
 {
     "python.analysis.typeCheckingMode": "basic",
     "todo-tree.tree.disableCompactFolders": true,
-    "python.analysis.autoImportCompletions": true
+    "python.analysis.autoImportCompletions": true,
+    "cSpell.words": [
+        "Aviao",
+        "Avião",
+        "Pardal",
+        "Passaro",
+        "Pinguim",
+        "voando",
+        "voar"
+    ]
 }
