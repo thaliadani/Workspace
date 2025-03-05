@@ -1,8 +1,8 @@
 class Passaro:
     def __init__(self, voar):
-        self.voar = voar
+        self._voar = voar
         
-    def voar(self):
+    def _voar(self):
         print('Passaro voando...')
         
 class Pardal(Passaro):
