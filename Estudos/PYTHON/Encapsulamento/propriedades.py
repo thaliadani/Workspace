@@ -27,7 +27,7 @@ class Conta:
 
     @saldo.deleter
     def saldo(self):
-        del self._saldo
+        self._saldo = 0
 
 conta = Conta(1000)
 print(conta.saldo)
