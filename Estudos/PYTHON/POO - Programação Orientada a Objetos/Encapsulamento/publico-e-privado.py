@@ -20,7 +20,6 @@ class Conta:
     def extrato(self):
         print(f"Saldo: R${self.__saldo}")
 
-
 conta1 = Conta("João", 300.00)
 
 conta1.depositar(50.23)
