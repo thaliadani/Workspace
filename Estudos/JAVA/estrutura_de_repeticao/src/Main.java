@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 @SuppressWarnings("t")
-final class Main {
+public  class Main {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             var count = 10;

@@ -1,12 +1,15 @@
 public class Arrays {
     public static void main(String[] args) throws Exception {
-        int[] numeros3 = {1, 2, 3, 4, 5};  // Array já com valores na declaração
+        
+        // Array já com valores na declaração
+        // int[] numeros3 = {1, 2, 3, 4, 5};  
         
         int[] numeros;  // Declaração de um array de inteiros
         
         numeros = new int[5];  // Inicialização com 5 elementos
         
         // Ou podemos fazer tudo junto
+        @SuppressWarnings("unused")
         int [] numeros2 = new int[5];
         
         // Acessando valores
