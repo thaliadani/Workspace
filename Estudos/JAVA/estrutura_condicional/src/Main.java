@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+final class Main {
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Digite seu nome: ");
