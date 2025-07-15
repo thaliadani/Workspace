@@ -118,5 +118,12 @@
         "voando",
         "voar",
         "você"
+    ],
+    "java.project.sourcePaths": [
+        "Estudos/JAVA/operadores_de_atribuicao_e_logicos/src",
+        "Estudos/JAVA/keywords_e_tipos_primitivos/src",
+        "Estudos/JAVA/estudoJavaProz/src",
+        "Estudos/JAVA/estrutura_de_repeticao/src",
+        "Estudos/JAVA/estrutura_condicional/src"
     ]
 }

@@ -1,6 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+final class Main {
     public static void main(String[] args) {
 
       byte number = 1;
@@ -15,7 +13,7 @@ public class Main {
 
       System.out.println("Byte: " + number);
       System.out.println("Short: " + shortNumber);
-      System.out.println("Integer: " + intNumber);
+      System.out.println("Int: " + intNumber);
       System.out.println("Long: " + longNumber);
       System.out.println("Float: " + floatNumber);
       System.out.println("Double: " + doubleNumber);
