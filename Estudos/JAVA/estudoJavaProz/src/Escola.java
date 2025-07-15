@@ -2,6 +2,7 @@ class Pessoa {
     String nome;
     int idade;
     Disciplina disc;
+    
     Pessoa(String nome, int idade, Disciplina disc) {
         // Este registro
         this.nome = nome;
@@ -45,7 +46,7 @@ class Disciplina {
     }
 }
 
-final class Objetos {
+public class Escola {
     public static void main(String[] args) {
         Prof prof = new Prof("Fernanda", 20);
         
