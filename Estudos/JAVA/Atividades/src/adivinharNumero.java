@@ -7,7 +7,6 @@ public class adivinharNumero {
         int numero = 5;
         int chute = 0;
 
-
         while (numero!= chute){
 
             System.out.println("Digite um numero");
