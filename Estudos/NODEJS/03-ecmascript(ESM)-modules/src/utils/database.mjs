@@ -1,4 +1,3 @@
-
 const databaseType ={
     userType : "admin",
     typeData: "mysql"
