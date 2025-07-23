@@ -1,0 +1,13 @@
+{
+  "name": "06-manipulando-variaveis-ambiente",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:dev": "node src/index.js",
+    "start:watch": "node --watch src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
