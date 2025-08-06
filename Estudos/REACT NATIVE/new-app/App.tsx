@@ -12,7 +12,7 @@ export default function App() {
     })
   }
   return (
-    <View style={styles.container}>
+    <View style={isActive ? styles.containerOn : styles.containerOff}>
       <TouchableOpacity onPress={handleSymbol}>
         <Image
           style={styles.image}
@@ -23,15 +23,21 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  containerOn: {
     flex: 1,
-    backgroundColor: '#383838',
+    backgroundColor: '#ffffff',
     alignItems: 'center',
     justifyContent: 'center',
   },
   image: {
     width: 100,
     height: 100
-  }
+  },
+  containerOff: {
+    flex: 1,
+    backgroundColor: '#2c2c2c',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 
 });
