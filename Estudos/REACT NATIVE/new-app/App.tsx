@@ -1,11 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, View, Image, TouchableOpacity } from 'react-native';
+import symbolOn from './assets/images/symbol-on.png';
+import symbolOff from './assets/images/symbol-off.png';
+
 
 export default function App() {
+  const [isActive, setIsActive] = useState(false)
+  function handleSymbol(){
+    setIsActive((oldValue:boolean) => {
+      return !oldValue
+    })
+  }
   return (
     <View style={styles.container}>
-      <Text style={{color: 'red'}}>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <TouchableOpacity onPress={handleSymbol}>
+        <Image
+          style={styles.image}
+          source={isActive ? symbolOff : symbolOn} />
+      </TouchableOpacity>
     </View>
   );
 }
@@ -13,8 +25,13 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#383838',
     alignItems: 'center',
     justifyContent: 'center',
   },
+  image: {
+    width: 100,
+    height: 100
+  }
+
 });
