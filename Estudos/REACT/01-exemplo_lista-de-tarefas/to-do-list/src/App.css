@@ -1,18 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: Arial, Helvetica, sans-serif ;
+}
+
 body {
-  font-family: sans-serif;
   background-color: #d4d4d4;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-top: 50px;
+  align-items: center;
+  padding-top: 4rem;
+  font-size: 1rem;
 }
 
 .container {
-  background-color: rgb(34, 34, 34);
-  padding: 20px 40px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  background-color: #2b2b2b;
+  padding: 2rem 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.1);
+  width: 460px;
   color: #ffffff;
 }
 
@@ -23,41 +37,39 @@ h1 {
 
 form {
   display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 input[type="text"] {
   flex-grow: 1;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0.8rem;
+  border: 0.2rem solid #ccc;
+  border-radius: 1rem;
 }
 
 button {
-  padding: 10px 15px;
+  padding: .5rem 1.2rem;
   border: none;
   background-color: #007bff;
   color: white;
-  border-radius: 4px;
+  border-radius: 5rem;
   cursor: pointer;
+  font-size: 1.2rem;
 }
 
 button:hover {
   background-color: #0056b3;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  border-bottom: 1px solid #eee;
+  padding: 1.2rem;
+  border-bottom: .1rem solid #eee;
 }
 
 li:last-child {
@@ -66,7 +78,8 @@ li:last-child {
 
 li span {
   flex-grow: 1;
-  font-size: 16px;
+  font-size: 1.4rem;
+  padding-right: .8rem;
 }
 
 li.concluida span {
@@ -76,8 +89,8 @@ li.concluida span {
 
 li button {
   background-color: #28a745;
-  font-size: 12px;
-  padding: 5px 10px;
+  font-size: 1rem;
+  padding: .5rem;
 }
 
 li.concluida button {

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './App.css'; // Vamos usar um pouco de CSS para estilizar
+import './App.css'; 
 
-// Componente principal da aplicação
 function App() {
   // useState para armazenar a lista de tarefas.
   // Cada tarefa é um objeto com id, texto e status de conclusão.
@@ -48,12 +47,13 @@ function App() {
       <form onSubmit={adicionarTarefa}>
         <input
           type="text"
+          maxLength={20}
           placeholder="Adicionar nova tarefa..."
           value={novaTarefa}
           // A cada mudança no input, atualiza o estado `novaTarefa`
           onChange={(e) => setNovaTarefa(e.target.value)}
         />
-        <button type="submit">Adicionar</button>
+        <button type="submit">+</button>
       </form>
       
       {/* Lista de tarefas renderizada */}
