@@ -11,13 +11,56 @@
 
 <body>
     <main>
-        <div>
-            <h2>Evento onclick</h2>
-            <button onclick="mostrarMensagem()">Clique aqui</button>
+        <div class="border">
+            <div class="container">
+                <h2>Evento onclick</h2>
+                <h4>Captura o clique do mouse</h4>
+                <button onclick="mostrarMensagem()">Clique aqui</button>
+            </div>
         </div>
-        <div onmouseover="mostrarTexto()" onmouseout="esconderTexto()">
-            <h2>Evento onmouseover</h2>
-            <p id="mensagem" >Passe o mouse aqui!</p>
+
+        <div class="border">
+            <div onmouseover="mostrarTexto()" onmouseout="esconderTexto()" class="container hover">
+                <h2>Evento onmouseover e onmouseout</h2>
+                <h4>Captura o mouse passando no elemento</h4>
+                <p id="mensagem">Passe o mouse aqui!</p>
+            </div>
+        </div>
+
+        <div class="border">
+            <div class="container">
+                <h2>Evento onchange</h2>
+                <h4>Captura o que foi escolhido ou digitado</h4>
+                <select name="fruta" onchange="mostrarEscolha(this.value)">
+                    <option value="">Escolha uma opção</option>
+                    <option value="Maçã">Maçã</option>
+                    <option value="Banana">Banana</option>
+                </select>
+                <p id="resultado"></p>
+                <br>
+                <input name="texto" value="" onchange="mostrarTextoDigitado(this.value)" type="text"
+                    placeholder="Digite um texto">
+                <p id="texto"></p>
+            </div>
+
+        </div>
+
+        <div class="border">
+            <div class="container">
+                <h2>Evento onkeydown</h2>
+                <h4>Captura tecla pressionada</h4>
+                <input type="text" onkeydown="teclaPressionada(event)" placeholder="Pressione uma tecla">
+                <p id="tecla"></p>
+            </div>
+        </div>
+
+        <div class="border">
+            <div class="container">
+                <h2>Evento onkeyup</h2>
+                <h4>Captura tecla liberada</h4>
+                <input type="text" onkeyup="teclaLiberada(event)" placeholder="Pressione uma tecla">
+                <p id="tecla-up"></p>
+            </div>
         </div>
 
     </main>
