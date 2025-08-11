@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
-    background-color: #2c2c2c;
+    background-color: #434343;
     color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -38,7 +38,7 @@ main {
 }
 
 .border {
-    background: linear-gradient(90deg, #833ab4, #fd1d1d, #fcb045);
+    background: linear-gradient(90deg, #833ab4, #ffffff, #fb5407);
     background-size: 400% 400%;
     padding: .5rem;
     border-radius: .5rem;
@@ -63,21 +63,22 @@ main {
     width: 150px;
 }
 
-.container p {
+.container p{
     background-color: #833AB4;
     padding: .8rem;
     font-weight: 600;
-    width: 200px;
+    width: 220px;
     text-align: center;
     word-break: break-all;
 }
 
-.container select, .container input{
+.container select, .container input, .container form input{
     border: none;
     padding: .5rem;
     width: 200px;
     font-size: .9rem;
     border-radius: .5rem;
+    margin-bottom: 1rem;
 }
 
 @keyframes gradient {
