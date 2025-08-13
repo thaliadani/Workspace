@@ -128,8 +128,10 @@ function textos(){
     textos.forEach(function(texto){
         texto.addEventListener("click", function(){
             alert("Você clicou: " + texto.innerText);
-            texto.style.color = "#000";
+            texto.style.color = "#1ecae0ff";
+            texto.style.fontSize = "14px";
         })
+
     })
 }
 
