@@ -64,7 +64,7 @@ function validarFormulario() {
     return true;
 }
 
-///////////////////////////////////////
+//---------------------- addEventListener ---------------------
 
 //addEventListener click
 function mostrarAlerta() {
@@ -86,13 +86,53 @@ function mudarCorFundo() {
     const caixa = document.getElementById("caixa");
 
     caixa.addEventListener("mouseover", function(){
-        caixa.style.backgroundColor = "#f34";
+        caixa.style.backgroundColor = "#860f19ff";
     })
 
     caixa.addEventListener("mouseout", function(){
         caixa.style.backgroundColor = "";
     })
 }
-
 mudarCorFundo();
 
+function mudarCorBotao() {
+    const botao = document.getElementById("botao-mudar-cor");
+
+    botao.addEventListener("mouseover", function(){
+        botao.style.backgroundColor = "#f3f033ff";
+        botao.style.color= "#000"
+    })
+
+    botao.addEventListener("mouseout", function(){
+        botao.style.backgroundColor = "#000";
+        botao.style.color= "#fff"
+    })
+}
+mudarCorBotao();
+
+function botoes(){
+    const botoes = document.querySelectorAll('.botao');
+
+    botoes.forEach(function(botao){
+        botao.addEventListener("click", function(){
+            alert("Você clicou: " + botao.innerText);
+        })
+    })
+}
+
+botoes();
+
+function textos(){
+    const textos = document.querySelectorAll('.texto');
+
+    textos.forEach(function(texto){
+        texto.addEventListener("click", function(){
+            alert("Você clicou: " + texto.innerText);
+            texto.style.color = "#1ecae0ff";
+            texto.style.fontSize = "14px";
+        })
+
+    })
+}
+
+textos();
