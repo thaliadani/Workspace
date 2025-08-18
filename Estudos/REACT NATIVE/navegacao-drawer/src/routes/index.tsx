@@ -1,11 +1,11 @@
 import { NavigationContainer } from "@react-navigation/native";
 
-import { BottomTabsRoutes } from "./bottom-tabs.routes";
+import { DrawerRoutes } from "./drawer.routes";
 
 export function Routes() {
     return (
         <NavigationContainer>
-            <BottomTabsRoutes />
+            <DrawerRoutes />
         </NavigationContainer>
     );
 }
