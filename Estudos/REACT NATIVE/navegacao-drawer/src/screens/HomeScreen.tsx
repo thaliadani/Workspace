@@ -7,7 +7,6 @@ export default function HomeScreen() {
         <View style={{ backgroundColor:'#202024', alignItems:'center', justifyContent:'center',width:'100%', height:'100%'}}>
             <Text style={{color:'#B2A4FF', fontSize:30}}>Home Screen</Text>
 
-
             <StatusBar style="auto" />
         </View>
     );
