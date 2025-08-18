@@ -1,5 +1,4 @@
-import { createDrawerNavigator } from '@react-navigation/drawer'
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+import { createDrawerNavigator } from '@react-navigation/drawer';
 
 import HomeScreen from '../screens/HomeScreen';
 import { GalleryScreen } from '../screens/GalleryScreen';
