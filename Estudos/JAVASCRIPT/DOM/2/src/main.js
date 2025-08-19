@@ -156,4 +156,11 @@ document.addEventListener('DOMContentLoaded', () => {
             alert("Você clicou no item: " + e.target.innerText);
         }
     })
+
+document.getElementById("painel").addEventListener("click", function (e) {
+        // Sempre em maiusculo
+        if (e.target.tagName === "BUTTON") {
+            e.target.style.backgroundColor: 
+        }
+    })
 });
