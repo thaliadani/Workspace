@@ -118,11 +118,11 @@ main {
 	}
 }
 
-#lista ul{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+#lista{
+    background-color: #fb5407;
+    width: 200px;
+}
+
+#lista li{
     font-size: 1.4rem;
 }

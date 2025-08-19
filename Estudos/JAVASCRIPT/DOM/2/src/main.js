@@ -151,6 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     document.getElementById("lista").addEventListener("click", function (e) {
+        // Sempre em maiusculo
         if (e.target.tagName === "LI") {
             alert("Você clicou no item: " + e.target.innerText);
         }
