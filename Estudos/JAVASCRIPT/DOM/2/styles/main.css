@@ -141,15 +141,15 @@ main {
 }
 
 #painel button::nthchild(1){
-    background-color:
+    background-color:#0AD6F0;
 }
 
 #painel button::nthchild(2){
-    background-color:
+    background-color:#6BF078;
 }
 
-#painel button::nthchild(1){
-    background-color:
+#painel button::nthchild(3){
+    background-color:#F01D0A;
 }
 
 #painel button::nthchild(1):hover,button::nthchild(2):hover,button::nthchild(3):hover{
