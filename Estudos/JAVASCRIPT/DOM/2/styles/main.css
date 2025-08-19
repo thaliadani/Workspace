@@ -117,3 +117,12 @@ main {
 		background-position: 0% 50%;
 	}
 }
+
+#lista ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+}

@@ -16,14 +16,16 @@
             <div class="container">
                 <h2>Evento onclick</h2>
                 <h4>Captura o clique do mouse</h4>
-                <button title="Clique aqui" type="button" onclick="mostrarMensagem()" id="botao">Clique aqui</button>
+
+                <button title="Clique aqui" type="button" id="botao">Clique aqui</button>
             </div>
         </div>
 
         <div class="border">
-            <div onmouseover="mostrarTexto()" onmouseout="esconderTexto()" class="container hover">
+            <div class="container hover">
                 <h2>Evento onmouseover e onmouseout</h2>
                 <h4>Captura o mouse passando no elemento</h4>
+
                 <p id="mensagem">Passe o mouse aqui!</p>
             </div>
         </div>
@@ -32,15 +34,19 @@
             <div class="container">
                 <h2>Evento onchange</h2>
                 <h4>Captura o que foi escolhido ou digitado</h4>
-                <select name="fruta" onchange="mostrarEscolha(this.value)">
+
+                <select name="fruta">
                     <option value="">Escolha uma opção</option>
                     <option value="Maçã">Maçã</option>
                     <option value="Banana">Banana</option>
                 </select>
+
                 <p id="resultado"></p>
+
                 <br>
-                <input name="texto" value="" onchange="mostrarTextoDigitado(this.value)" type="text"
-                    placeholder="Digite um texto">
+
+                <input name="texto" value="" type="text" placeholder="Digite um texto">
+
                 <p id="texto"></p>
             </div>
 
@@ -50,7 +56,9 @@
             <div class="container">
                 <h2>Evento onkeydown</h2>
                 <h4>Captura tecla pressionada</h4>
-                <input type="text" onkeydown="teclaPressionada(event)" placeholder="Pressione uma tecla">
+
+                <input type="text" placeholder="Pressione uma tecla" onkeydown="teclaPressionada(event)">
+
                 <p id="tecla"></p>
             </div>
         </div>
@@ -59,7 +67,9 @@
             <div class="container">
                 <h2>Evento onkeyup</h2>
                 <h4>Captura tecla liberada</h4>
-                <input type="text" onkeyup="teclaLiberada(event)" placeholder="Pressione uma tecla">
+
+                <input type="text" placeholder="Pressione uma tecla" onkeyup="teclaLiberada(event)">
+
                 <p id="tecla-up"></p>
             </div>
         </div>
@@ -68,12 +78,17 @@
             <div class="container">
                 <h2>Evento onsubmit</h2>
                 <h4>Enviar formulário</h4>
-                <form onsubmit="return validarFormulario()">
+
+                <form>
                     <input type="text" name="nome" id="nome" placeholder="Digite seu nome" maxlength="20">
+
                     <input type="text" name="idade" id="idade" placeholder="Digite usa idade" maxlength="3"
                         onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+
                     <input type="email" name="email" id="email" placeholder="Digite seu email" maxlength="20">
+
                     <input type="password" name="senha" id="senha" placeholder="Digite sua senha" maxlength="8">
+
                     <button type="submit">Enviar</button>
                 </form>
             </div>
@@ -85,7 +100,9 @@
             <div class="container">
                 <h2>addEventListener click</h2>
                 <h4>Monitora o clique do mouse</h4>
+
                 <button title="Ola" type="button" id="ola">Olá</button>
+
                 <button title="Tchau" type="button" id="tchau">Tchau</button>
             </div>
         </div>
@@ -94,6 +111,7 @@
             <div id="caixa" class="container">
                 <h2>addEventListener mouseover mouseout</h2>
                 <h4>Monitora entrada e saida do mouse</h4>
+
                 <button title="mudar cor" type="button" id="botao-mudar-cor">Botão</button>
             </div>
         </div>
@@ -102,10 +120,14 @@
             <div class="container">
                 <h2>document.querySelectorAll</h2>
                 <h4>Seleciona todos os elementos</h4>
+
                 <button title="mudar cor" type="button" class="botao">Botão 1</button>
+
                 <button title="mudar cor" type="button" class="botao">Botão 2</button>
+
                 <button title="mudar cor" type="button" class="botao">Botão 3</button>
             </div>
+
             <div class="texto">
                 <h2>Texto 1</h2>
             </div>
@@ -119,7 +141,31 @@
             </div>
         </div>
 
+        <div class="border">
+            <div class="container" id="tag">
+                <h2>tagName</h2>
+                <h4>Seleciona o nome da tag</h4>
+
+                <button>Botão 1</button>
+
+                <button>Botão 2</button>
+
+                <button>Botão 3</button>
+
+                <div id="lista">
+                    <ul>
+                        <li>item 1</li>
+                        <li>item 2</li>
+                        <li>item 3</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
     </main>
+
     <script src="./src/main.js"></script>
 </body>
 
