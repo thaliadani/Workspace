@@ -126,3 +126,32 @@ main {
 #lista li{
     font-size: 1.4rem;
 }
+
+#painel{
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 1.2rem;
+}
+
+#painel button{
+   width: 200px;
+   height: 50px;
+}
+
+#painel button::nthchild(1){
+    background-color:
+}
+
+#painel button::nthchild(2){
+    background-color:
+}
+
+#painel button::nthchild(1){
+    background-color:
+}
+
+#painel button::nthchild(1):hover,button::nthchild(2):hover,button::nthchild(3):hover{
+   border:#fff solid 5px;
+}
