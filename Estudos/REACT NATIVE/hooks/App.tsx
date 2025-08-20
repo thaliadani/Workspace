@@ -1,81 +1,43 @@
-import { useState, useEffect, useReducer, use } from 'react';
-import { Alert, Button, StyleSheet, Text, View } from 'react-native';
-import {App2} from './App2';
+import React, { use } from 'react';
+import { StyleSheet, View, Text } from 'react-native';
+import { stateHook } from './src/screens/stateScreen';
+import { effectHook } from './src/screens/effectScreen';
+import { refHook } from './src/screens/refScreen';
+import { reducerHook } from './src/screens/reducerScreen';
 
 export default function App() {
 
-  //TODO useReducer - Use em componentes mais complexos
-
-  /* 
-      const reducer = (state: { counter: number }, action: { type: string }) => {
-        switch (action.type) {
-          case 'INCREMENT':
-            return { counter: state.counter + 1 };
-          case 'DECREMENT':
-            if (state.counter > 0) {
-              return { counter: state.counter - 1 };
-            }
-          default:
-            return state;
-        }
-      }
-  
-    const [state, dispatch] = useReducer(reducer, { counter: 0 });
-  
-      const incrementCount = () => {
-        dispatch({ type: 'INCREMENT' });
-      }
-  
-      const decrementCount = () => {
-        dispatch({ type: 'DECREMENT' });
-      }
-  
-      useEffect(() => {
-        if(state.counter === 0){
-          Alert.alert('Carrinho', 'Carrinho vazio');
-        }else{
-          Alert.alert('Carrinho', 'quantidade: ' + state.counter);
-        }
-      }, [state.counter])
-  */
-
-  //TODO useState - Use em pequenos componentes
-
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    if (count === 0) {
-      Alert.alert('Carrinho', 'Carrinho vazio');
-    } else {
-      Alert.alert('Carrinho', 'quantidade: ' + count);
-    }
-  }, [count])
-
-  const incrementCount = () => {
-    setCount((prevState) => prevState + 1);
-  }
-
-  const decrementCount = () => {
-    if (count > 0) {
-      setCount((prevState) => prevState - 1);
-    }
-  }
-
   return (
     <View style={styles.container}>
-      <Text style={styles.big}>hooks</Text>
+      <Text style={styles.title}>Hooks</Text>
 
-      <Text style={styles.big}>{count}</Text>
+      <View style={styles.containerColumn}>
+        <Text style={styles.title}>useState</Text>
 
-      <View style={styles.inline}>
-        <Button title='Remover' onPress={decrementCount}></Button>
-        <Button title='Adicionar' onPress={incrementCount}></Button>
+        {stateHook()}
+
       </View>
 
+      <View style={styles.containerColumn}>
+        <Text style={styles.title}>useEffect</Text>
 
-      <View style={styles.inline}>
-        <App2 />
+        {effectHook()}
       </View>
+
+      <View style={styles.containerColumn}>
+        <Text style={styles.title}>useRef</Text>
+
+        {refHook()}
+
+      </View>
+
+      <View style={styles.containerColumn}>
+        <Text style={styles.title}>useReducer</Text>
+
+        {reducerHook()}
+
+      </View>
+
     </View>
   );
 }
@@ -86,14 +48,22 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    gap: 10,
+    gap: 20,
   },
-  big: {
-    fontSize: 50,
-  },
-  inline: {
-    flexDirection: 'row',
+  containerColumn: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
     gap: 10,
-    marginTop: 40
-  }
+    padding: 10,
+    borderWidth: 1,
+    width: '80%',
+    height: 110,
+    borderColor: '#ccc',
+    borderRadius: 10,
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
 });
