@@ -5,24 +5,20 @@ const ActionTypes = {
     SET_TEXT: 'SET_TEXT',
     RESET: 'RESET',
 }
-const initialState = {
-    textInputRef: useRef<TextInput>(null),
-};
 
 const reducer = (state: any, action: any) => {
     switch (action.type) {
         case ActionTypes.SET_TEXT:
-            state.textInputRef.current.setNativeProps({ text: 'teste' });
-            return state;
+            return { ...state, text: 'teste' };
         case ActionTypes.RESET:
-            state.textInputRef.current.clear();
-            return state;
+            return { ...state, text: '' };
     }
 }
 
 export function reducerHook() {
-
-
+    const initialState = {
+        textInputRef: useRef<TextInput>(null),
+    };
 
     const [state, dispatch] = useReducer(reducer, initialState);
 
@@ -37,17 +33,20 @@ export function reducerHook() {
     return (
         <>
             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
-                <TextInput ref={state.textInputRef} style={{ fontSize: 18, borderWidth: 1 }} placeholder='Digite aqui'></TextInput>
+                
+                <TextInput 
+                ref={state.textInputRef} 
+                style={{ fontSize: 18, borderWidth: 1 }} 
+                placeholder='Digite aqui'
+                value={state.text}/>
 
                 <Button
                     onPress={handleChangeText}
-                    title='Enviar'>
-                </Button>
+                    title='Enviar'/>
 
                 <Button
                     onPress={resetButton}
-                    title='Reset'>
-                </Button>
+                    title='Reset'/>
             </View >
         </>
     );
