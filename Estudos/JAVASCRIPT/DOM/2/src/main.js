@@ -157,10 +157,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-document.getElementById("painel").addEventListener("click", function (e) {
-        // Sempre em maiusculo
+    document.getElementById("painel").addEventListener("click", function (e) {
         if (e.target.tagName === "BUTTON") {
-            e.target.style.backgroundColor: 
+            const container = document.querySelector(".mini-painel");
+            const buttonStyle = getComputedStyle(e.target);
+            container.style.backgroundColor = buttonStyle.backgroundColor;
         }
-    })
+    });
 });
