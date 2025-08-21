@@ -157,11 +157,55 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    document.getElementById("painel").addEventListener("click", function (e) {
-        if (e.target.tagName === "BUTTON") {
-            const container = document.querySelector(".mini-painel");
-            const buttonStyle = getComputedStyle(e.target);
-            container.style.backgroundColor = buttonStyle.backgroundColor;
+    //-----------------------------------------------------
+
+    // classe da div do mini-painel
+    const miniPanelContainer = document.querySelector(".mini-painel");
+
+    //id da div que engloba os botoes
+    const panel = document.getElementById("painel");
+
+    //Evento de escuta de click
+    panel?.addEventListener("click", function (e) {
+
+        // Verifica se o elemento clicado é um botão
+        const clickedButton = e.target.closest("button");
+
+        if (clickedButton) {
+
+            // Obtém o estilo do botão clicado
+            const buttonStyle = getComputedStyle(clickedButton);
+
+            //Adiciona a cor de fundo dos botoes na div mini-painel
+            miniPanelContainer.style.backgroundColor = buttonStyle.backgroundColor;
         }
+
     });
+
+    panel?.addEventListener("dblclick", function (e) {
+
+        // Verifica se o elemento clicado é um botão
+        const clickedButton = e.target.closest("button");
+
+        if (clickedButton) {
+
+            //Adiciona a cor de fundo dos botoes na div mini-painel
+            miniPanelContainer.style.backgroundColor = ''
+        }
+
+    });
+
+    //Evento de escuta de click
+    miniPanelContainer?.addEventListener("click", function (e) {
+
+        // Verifica se o elemento clicado é um botão com id resetar
+        const clickedButton = e.target.closest("#resetar");
+
+        if (clickedButton) {
+            //Reseta a cor de fundo para o padrão
+            miniPanelContainer.style.backgroundColor = '';
+        }
+
+    });
+
 });
