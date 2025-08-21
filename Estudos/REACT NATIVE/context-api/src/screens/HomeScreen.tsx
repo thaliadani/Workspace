@@ -8,7 +8,6 @@ import { styles } from '../styles/MainStyles';
 
 import { UserContext } from '../contexts/userContext';
 
-
 type HomeScreenNavigationProp = {
     navigation: StackNavigationProp<RootStackParamList, 'Home'>;
 }

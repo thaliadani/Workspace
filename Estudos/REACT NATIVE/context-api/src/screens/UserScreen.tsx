@@ -14,11 +14,11 @@ type UserScreenProp = {
 export function UserScreen({ route }: UserScreenProp) {
     const { username } = route.params;
 
-    const UserContextValue = useContext(UserContext);
+    const userContext = useContext(UserContext);
 
-    const usernameDynamic = UserContextValue?.username || 'Nenhum nome salvo';
+    const usernameDynamic = userContext?.username || 'Nenhum nome salvo';
 
-    const usernameStatic = UserContextValue?.loginUsername || 'Nenhum nome fornecido';
+    const usernameStatic = userContext?.loginUsername || 'Nenhum nome fornecido';
 
     return (
         <View style={styles.container}>
