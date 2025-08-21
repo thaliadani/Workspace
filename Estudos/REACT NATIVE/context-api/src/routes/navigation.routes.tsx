@@ -1,6 +1,7 @@
 import { createStackNavigator } from "@react-navigation/stack";
-
 import HomeScreen from "../screens/HomeScreen";
+
+const UserScreen = require('../screens/UserScreen').UserScreen
 
 const {Screen, Navigator} = createStackNavigator();
 
@@ -19,7 +20,7 @@ export function NavigationRoutes() {
             />
             <Screen 
                 name="User" 
-                component={require('../screens/UserScreen').UserScreen} 
+                component={UserScreen} 
                 options={{headerShown: false}}
             />
         </Navigator>
