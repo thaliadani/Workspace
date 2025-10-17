@@ -9,7 +9,7 @@ if(empty($nome) || empty($email) || empty($mensagem)) {
 }
 
 echo "✅ Obrigado, <strong>$nome</strong>!<br>";
-echo "❤️ Recebemos sua mensagem:<br>";
+echo "❤️Recebemos sua mensagem:<br>";
 echo "<em>\"$mensagem\"</em><br><br>";
 echo "✉️ Entraremos em contato pelo email: <strong>$email</strong>.";
 

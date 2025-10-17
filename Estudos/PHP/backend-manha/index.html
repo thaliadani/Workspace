@@ -1,39 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário de Contato</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body class="min-vh-100 min-vw-100">
 
   <header>
-    <h1>💬 Fale Conosco</h1>
-    <p>Preencha o formulário abaixo e envie suas informações.</p>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="d-flex flex-column align-items-center justify-content-center text-white gap-4 mt-4 text-center">
+            <h1>💬 Fale Conosco</h1>
+            <p>Preencha o formulário abaixo e envie suas informações.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <main>
-    <form id="formContato" action="processa.php" method="POST">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
+  <main class="bg-white m-4 border p-4 rounded-3 shadow mx-lg-auto">
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required>
+    <div class="container">
+      <div class="row">
+        <div class="column">
+          <form class="d-flex flex-column g-2" id="formContato" action="processa.php" method="POST">
 
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            <div class="mb-3">
+              <label class="form-label fw-bold" for="nome">Nome:</label>
+              <input class="form-control mb-2 p-1 border-dark rounded-1" type="text" id="nome" name="nome" required>
+            </div>
 
-      <button type="submit">Enviar</button>
-    </form>
+            <div class="mb-3">
+              <label class="form-label fw-bold" for="email">E-mail:</label>
+              <input class="form-control mb-2 p-1 border-dark rounded-1" type="email" id="email" name="email" required>
+            </div>
 
-    <div id="resposta"></div>
+            <div class="mb-3">
+              <label class="form-label fw-bold" for="mensagem">Mensagem:</label>
+              <textarea class="form-control mb-2 p-1 border-dark rounded-1" id="mensagem" name="mensagem" rows="4"
+                required></textarea>
+            </div>
+
+            <button class="btn btn-primary align-self-center" type="submit">Enviar</button>
+          </form>
+        </div>
+        <div class="column">
+          <div class="text-center pt-4">
+            <div id="resposta"></div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
   </main>
 
   <footer>
-    <p>Desenvolvido na aula de Back-End 💻</p>
+    <div class="container">
+      <div class="row">
+        <div class="column text-center pt-2">
+          <p>Desenvolvido na aula de Back-End 💻</p>
+        </div>
+      </div>
+    </div>
+
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
