@@ -3,8 +3,6 @@ body {
   background: linear-gradient(135deg, #4a90e2, #50c878) no-repeat center center fixed;
 }
 
-@media screen and (min-width: 720px) {
-  main{
-    width: 40%;
-  }
+main{
+  width: 450px !important;
 }
