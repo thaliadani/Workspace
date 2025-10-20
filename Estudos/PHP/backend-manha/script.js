@@ -1,5 +1,5 @@
 // Espera o usuário clicar em "Enviar"
-document.getElementById("formContato").addEventListener("submit", function(event){
+document.getElementById("formContato").addEventListener("submit", function (event) {
     event.preventDefault(); // impede o envio automático do formulário
 
     const nome = document.getElementById("nome").value.trim();
@@ -7,8 +7,12 @@ document.getElementById("formContato").addEventListener("submit", function(event
     const mensagem = document.getElementById("mensagem").value.trim();
 
     // Simples validação no front-end
-    if(!nome || !email || !mensagem){
+    if (!nome || !email || !mensagem) {
+        document.getElementById("visivel").classList.remove("d-none");
         document.getElementById("resposta").innerText = "⚠️ Preencha todos os campos!";
+        setTimeout(function () {
+            document.getElementById("visivel").classList.add("d-none");
+        }, 5000); // esconde após 5 segundos
         return;
     }
 
@@ -20,12 +24,20 @@ document.getElementById("formContato").addEventListener("submit", function(event
         },
         body: `nome=${encodeURIComponent(nome)}&email=${encodeURIComponent(email)}&mensagem=${encodeURIComponent(mensagem)}`
     })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("resposta").innerHTML = data;
-        document.getElementById("formContato").reset(); // limpa o formulário
-    })
-    .catch(error => {
-        document.getElementById("resposta").innerText = "❌ Erro ao enviar dados!";
-    });
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("visivel").classList.remove("d-none");
+            document.getElementById("resposta").innerHTML = data;
+            document.getElementById("formContato").reset(); // limpa o formulário
+            setTimeout(function () {
+                document.getElementById("visivel").classList.add("d-none");
+            }, 5000); // esconde após 5 segundos
+        })
+        .catch(error => {
+            document.getElementById("visivel").classList.remove("d-none");
+            document.getElementById("resposta").innerText = "❌ Erro ao enviar dados!";
+            setTimeout(function () {
+                document.getElementById("visivel").classList.add("d-none");
+            }, 5000); // esconde após 5 segundos
+        });
 });
