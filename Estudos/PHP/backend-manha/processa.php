@@ -1,5 +1,7 @@
 <?php
 //Recebe os dados do formulário
+date_default_timezone_set('America/Sao_Paulo');
+$data = date('d/m/Y H:i:s');
 $nome = $_POST['nome'] ?? '';
 $email = $_POST['email'] ?? '';
 $mensagem = $_POST['mensagem'] ?? '';
@@ -11,7 +13,7 @@ if(empty($nome) || empty($email) || empty($mensagem)) {
 }
 
 //Monta o texto a ser salvo
-$texto = "Nome: $nome\nEmail: $email\nMensagem: $mensagem\n----------------------------\n";
+$texto = "[$data] Nome: $nome\nEmail: $email\nMensagem: $mensagem\n----------------------------\n";
 
 //Abre o arquivo para escrita (modo append)
 $arquivo = fopen("mensagens.txt", "a");

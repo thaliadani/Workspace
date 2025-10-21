@@ -11,13 +11,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="min-vh-100 min-vw-100">
+<body>
 
   <header>
     <div class="container">
       <div class="row">
-        <div class="column">
-          <div class="d-flex flex-column align-items-center justify-content-center text-white gap-4 mt-4 text-center">
+        <div class="column d-flex flex-column align-items-center justify-content-center text-white gap-4 mt-4 text-center">
+          <div>
             <h1>💬 Fale Conosco</h1>
             <p>Preencha o formulário abaixo e envie suas informações.</p>
           </div>
@@ -26,12 +26,12 @@
     </div>
   </header>
 
-  <main class="bg-white m-4 border p-4 rounded-3 shadow mx-auto">
+  <main class="mx-auto w-75">
 
     <div class="container">
       <div class="row">
-        <div class="column">
-          <form class="d-flex flex-column g-2" id="formContato" action="processa.php" method="POST">
+        <div class="column bg-white p-4 m-4 rounded-3 shadow mx-auto">
+          <form class="d-flex flex-column gap-1" id="formContato" action="processa.php" method="POST">
 
             <div class="mb-3">
               <label class="form-label fw-bold" for="nome">Nome:</label>
@@ -45,7 +45,7 @@
 
             <div class="mb-3">
               <label class="form-label fw-bold" for="mensagem">Mensagem:</label>
-              <textarea class="form-control mb-2 p-1 border-dark rounded-1" id="mensagem" name="mensagem" rows="4"
+              <textarea class="form-control mb-2 p-1 border-dark rounded-1" style="resize:none" id="mensagem" name="mensagem" rows="4"
                 required></textarea>
             </div>
 
@@ -53,7 +53,7 @@
           </form>
         </div>
         <div class="column">
-          <div id="visivel" class="text-center pt-4 position-absolute top-50 start-50 translate-middle bg-white p-4 border rounded-3 shadow d-none">
+          <div id="visivel" class="text-center pt-4 position-absolute top-50 start-50 translate-middle bg-white p-4 rounded-3 shadow d-none text-break border border-3 border-dark w-50 mx-auto">
             <div id="resposta"></div>
           </div>
           
@@ -65,7 +65,7 @@
   <footer>
     <div class="container">
       <div class="row">
-        <div class="column text-center pt-2">
+        <div class="column text-center pt-4">
           <p>Desenvolvido na aula de Back-End 💻</p>
         </div>
       </div>
