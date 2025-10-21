@@ -26,11 +26,11 @@
     </div>
   </header>
 
-  <main class="mx-auto w-75">
+  <main class="mx-auto">
 
     <div class="container">
       <div class="row">
-        <div class="column bg-white p-4 m-4 rounded-3 shadow mx-auto">
+        <div class="column bg-white p-4 my-4 rounded-3 shadow mx-auto">
           <form class="d-flex flex-column gap-1" id="formContato" action="processa.php" method="POST">
 
             <div class="mb-3">
@@ -45,7 +45,7 @@
 
             <div class="mb-3">
               <label class="form-label fw-bold" for="mensagem">Mensagem:</label>
-              <textarea class="form-control mb-2 p-1 border-dark rounded-1" style="resize:none" id="mensagem" name="mensagem" rows="4"
+              <textarea class="form-control mb-2 p-1 border-dark rounded-1" style="resize:none" id="mensagem" name="mensagem" maxlength="200" rows="4"
                 required></textarea>
             </div>
 
