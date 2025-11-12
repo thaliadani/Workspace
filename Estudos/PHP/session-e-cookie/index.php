@@ -11,7 +11,6 @@ if (isset($_POST["usuario"])) {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            cursor: default;
             user-select: none;
         }
 
@@ -90,4 +89,5 @@ if (isset($_POST["usuario"])) {
         echo "Último usuário logado: " . $_COOKIE["ultimo_usuario"];
     }
 }
+
 ?>
