@@ -7,7 +7,6 @@ echo "Cookie apagado!";
         padding: 0;
         margin: 0;
         box-sizing: border-box;
-        cursor: default;
         user-select: none;
     }
 
@@ -44,4 +43,5 @@ echo "Cookie apagado!";
 
 <a href="http://localhost/session-e-cookie/">
     <button>Voltar para página inicial</button>
+
 </a>
