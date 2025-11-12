@@ -8,6 +8,7 @@ echo "Cookie apagado!";
         margin: 0;
         box-sizing: border-box;
         cursor: default;
+        user-select: none;
     }
 
     body {

@@ -12,6 +12,7 @@ if (isset($_POST["usuario"])) {
             margin: 0;
             box-sizing: border-box;
             cursor: default;
+            user-select: none;
         }
 
         body {
@@ -31,8 +32,7 @@ if (isset($_POST["usuario"])) {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 40%;
-            width: 60%;
+            padding: 2rem;
             background-color: #b9b9b9ff;
             border-radius: .5rem;
             margin-bottom: 1rem;
@@ -68,8 +68,9 @@ if (isset($_POST["usuario"])) {
         }
 
         a {
-            color: #000;
+            color: #0a0a0aff;
             cursor: pointer;
+            padding-bottom: 1rem;
         }
     </style>
 
